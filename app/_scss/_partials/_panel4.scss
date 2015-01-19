@@ -1,0 +1,142 @@
+#brick {
+  background-image: url("../assets/bgphotos/hose450.jpg");
+  @extend .backgroundimage;      
+   @include retina{
+            background-image: url("../assets/bgphotos/hose450@2x.jpg");
+        } 
+  color: $black;
+  font-size: 7px;
+  @include break-min($panel4-text-break4){
+    font-size: 8px;
+  }
+  @include break-min($main-break-lg){
+    background-image: url("../assets/bgphotos/hose1200.jpg");
+    font-size: 10px;
+  }
+  @include break-min($panel4-text-break3){
+    font-size: 12px;
+  }
+  @include break-min($panel4-text-break){
+    font-size: 14px;
+  }
+  @include break-min($panel4-text-break2){
+    font-size: 16px;
+  }
+  @include break-min($main-break-xxtrlg){
+    background-image: url("../assets/bgphotos/hose.jpg");
+    font-size: 18px;
+  }
+  @include break-min($main-break-xxxtrlg){
+    font-size: 20px;
+  }
+  .panel {
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-color: $white_60;
+    text-align: left;   
+  }
+  #brick-content {
+    width: 90%;
+    height: 34em; 
+        margin: auto;
+      position: absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+      @include break-max($main-break){
+        width: 95%;
+      }
+      @include break-min($main-break-xxxtrlg){
+        width: 68em;
+      }
+      img {
+        position: absolute;
+        top: 22em;
+        left: 3%;
+        width: 67%;
+        z-index: 1;
+        @include break-between($panel4-text-break6, $panel4-text-break5){
+          left: 8%;
+          width: 61%;
+        }
+        @include break-between($panel4-text-break5, $main-break-xxxtrlg){
+          left: 9%;
+          width: 60%;
+        }
+        @include break-min($main-break-xxxtrlg){
+          left: 7%;
+          width: 63%;
+        }
+      }
+    > div{
+      width: 42%;
+      position: relative;
+      top:0;
+      height:100%;
+      @include break-max($main-break){
+        width: 50%;
+      }
+      &:first-of-type{
+      h1 {
+        position: absolute;
+        right: 1em;
+        width: 12em;
+        font-size: 2.2em;
+        line-height: 1.3em;
+        text-align: left;
+        display: block;
+        margin: 0;
+        top: 45%;
+        left: 61%;
+        margin-right: -50%;
+        @include transform(translate(-50%, -50%));
+          @include break-max($main-break){
+            max-width: 16em;
+            font-size: 2em;
+            left: 52%;
+            }
+          @include break-min($main-break-xxtrlg){
+            width: 13em;
+            top: 50%;
+            } 
+
+          }
+        }
+      &:nth-of-type(2n) {
+        right: 0;
+        position: absolute;
+        .circle {
+          width: 22.5em;
+          height: 22.5em;
+          @include border-radius(50%);
+          background-color: $white_60;
+          position: absolute;
+          right: 0;
+          margin: auto;
+          left:0;
+          top:0;
+          bottom:0;
+          padding: 5%;
+          @include break-max($main-break) {
+            width: 18.5em;
+            height: 18.5em;
+          }
+          h1 {
+            font-size: 7.2em;
+            padding: auto;
+            display: block;
+            position: absolute;
+            right: 0;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 1em;
+          }
+        }
+      }
+    }
+  }
+}

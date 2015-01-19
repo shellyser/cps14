@@ -1,0 +1,242 @@
+$footer_height: 11%;
+#intro {
+    #intro-content-bg {
+        background-color: $white_50;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    #intro-sky-bg {
+        width:100%;
+        height: 100%;
+        position: absolute;
+        z-index:-2;
+        background-image: url("../assets/bgphotos/sky600.jpg");  
+        @include retina{
+            background-image: url("../assets/bgphotos/sky600@2x.jpg");
+        }
+        @include break-min($main-break-lg){
+            background-image: url("../assets/bgphotos/sky.jpg");
+        }
+        @extend .backgroundimage;    
+     }
+}
+header {
+    height: 86px;
+    background-color: $white;
+    img {
+        margin-top: 23.5px;
+        width: 400px;
+        height: 39px;
+        vertical-align: middle;
+    }
+}
+
+#intro-content {
+    width: rem(26);
+    position: relative;
+    margin: auto;
+    @include calc(height, "100% - #{$footer_height} - 86px");
+    .box {
+        min-height: 38%;
+        width: rem(3);
+        position: absolute;
+        border-left: #68d0ef rem(.3) solid;
+        border-bottom: #68d0ef rem(.4) solid;
+        left: rem(3.4);
+        top: 33%;
+    }
+    .asterick{
+        width: rem(1.6);
+        left: rem(-1);
+        top: rem(-1); 
+        position: absolute;
+        background-image: url("/assets/asterick_black.png");
+        background-repeat: no-repeat;
+    }
+    @include break-min($main-break-lg){
+         width: rem(35);
+         .box {
+            min-height: 38%;
+            width: rem(6);
+            left: rem(4);
+         }
+    }
+    @include break-min($panel4-text-break3){
+        width: rem(53);
+        .box {
+           min-height: 53%;
+           width: rem(14);
+           top: 35%;
+           left: rem(3.5);
+        }
+    }
+    @include break-min($panel1-text-break2){
+        width: rem(57);
+        .box {
+            left: rem(1.5);
+            min-height: 54%;
+        }
+    }
+    @include break-min($main-break-xxtrlg){
+         width: rem(65);
+          .box {
+             top: 37%;
+             left: rem(1.5);
+          }
+    }
+    #intro-content-top {
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        color: $dark_blue;
+        position: absolute;
+        #intro-title {
+            display: none;
+            padding: 2%;
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            @include transform(translate(-50%, -50%));
+            font-size: rem(2.7);
+            @include break-min($main-break-lg) {
+                font-size: rem(3.5);
+            }
+            @include break-min($panel1-text-break2) {
+                font-size: rem(4.1);
+            }
+            @include break-min($main-break-xxtrlg) {
+                font-size: rem(4.7);
+            }
+        }
+    }   
+}
+
+#intro-content-bottom {
+    display: block;
+    position: relative;
+    height: 50%;
+    padding: 2%;
+    top: 50%;
+    #intro-section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        @include transform(translate(-50%, -50%));     
+            text-align: center;
+            #intro-year {
+                display: block;
+                font-size: rem(5.6);
+                font-weight: 700;
+                @include text-shadow(rgba(0, 0, 0, 0.15) 2px 1px 5px);   
+            }
+            #intro-text {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                display: block;
+                margin: 5px auto;
+                width: 24rem;
+                @include text-shadow(rgba(0, 0, 0, 0.6) 2px 0px 2px);   
+            }
+        @include break-max($main-break){
+            #intro-year{
+                font-size: rem(5);
+            }
+        }
+        @include break-min($panel4-text-break3){
+            min-width: 100%;
+            margin: auto;
+            #intro-year {
+                font-size: rem(7);
+                font-weight: 700;
+                display: inline-block;
+            }
+            #intro-text {
+               font-size: rem(0.9);
+               line-height: rem(1.75);
+               width: rem(28);
+               text-align: left;
+               margin-left: 2%;
+               display: inline-block;
+            }
+        }
+            @include break-min($panel1-text-break2) {
+            min-width: 100%;
+            margin: auto;
+              #intro-year {
+                  font-size: rem(8.3);
+                  margin-left: rem(1.5);
+                  font-weight: 700;
+                  display: inline-block;
+              }
+               #intro-text {
+                    font-size: rem(1);
+                    line-height: em(1.8);
+                    text-align: left;
+                    margin-left: rem(1.2);
+                    display: inline-block;
+                    width: rem(31);
+                }
+            }   
+            @include break-min($main-break-xxtrlg) {
+            min-width: 100%;
+            margin: auto;
+              #intro-year {
+                  font-size: rem(9);
+                  font-weight: 700;
+                  display: inline-block;
+                  margin-left: rem(3);
+              }
+               #intro-text {
+                    font-size: rem(1.1);
+                    line-height: rem(2);
+                    text-align: left;
+                    margin-left: rem(2.3);
+                    display: inline-block;
+                    width: rem(34);
+                }
+            }   
+
+        } 
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $white;
+    text-align: center;
+    color: #0E9DD8;
+    font-style: italic;
+    height: $footer_height;
+    font-size: .8em;
+    #footer-content {
+        height: 5em;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @include break-min($main-break-xxxtrlg){
+            height: 4em;
+        }   
+        h3{
+            display:block;
+            margin-top: rem(0.2);
+        }
+        #intro-scroll {
+            display: none;
+        } 
+        #intro-scroll:hover {
+            cursor: pointer;
+        } 
+    }   
+}
+    

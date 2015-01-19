@@ -1,0 +1,325 @@
+#street-lower {
+  font-size: 6px;
+  @include break-between($panel3-text-break, $main-break-lg){
+    font-size: 8px;
+  }
+  @include break-min($main-break-lg){
+    font-size: 11px;
+  }
+  @include break-min($panel1-text-break){
+    font-size: 12px;
+  }
+  @include break-min($main-break-xtrlg){
+    font-size: 18px;
+  }
+
+  @include break-min($main-break-xxtrlg){
+    font-size: 20px;
+  }
+  text-align: center;
+  background-color: $green;
+  #map-header{
+    background-color: $white;
+    color: $dark_blue;
+    font-weight: 700;
+    height: 8.2em;
+    top: 10%;
+    z-index: 9999;
+    position: relative;
+    h1 {
+      position: absolute;
+      width: 100%;
+      font-size: 300%;
+      font-weight: 400;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      @include transform(translate(-50%, -50%));
+      span {
+        font-weight: 700;
+        color: $color_blue;
+        display: block;
+      }
+      @include break-min($panel2-text-break){
+        span{
+          display: initial;
+        }
+      }
+    }
+  }
+  #map-wrapper{
+    position: absolute;
+    width: 49em;
+    height: 49em;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    #map {
+      @include opacity(0.15);
+      width: 100%;
+    }
+    @include break-max($main-break){
+      width: 36em;
+      height: 36em;
+    }
+  }
+  [class^="layer-"] {
+    position: absolute;
+    .circle-outter {
+      background-color: $white_30;
+      @include border-radius(50%);
+      position: absolute;
+      width: 5.7em;
+      height: 5.7em;
+    }
+    .circle-inner {
+      @include border-radius(50%);
+      background-color: $white_60;
+      position: relative;
+      width: 4.5em;
+      height: 4.5em;
+      left: 0.6em;
+      top: 0.6em;
+    }
+    h3 {
+      display: block;
+      font-size: 2.2em;
+      height: 1em;
+      color: $deep_blue;
+      top: rem(1.2);
+      left: rem(1.2);
+      font-weight: 700;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    .line {
+      height: 3px;
+      width: 11em;
+      background-color: #015fd0;
+      position: absolute;
+      display: block;
+    }
+    p {
+      width: 31em;
+      display: block;
+      position: absolute;
+      text-align: left;
+      line-height: 1.8em;
+      @include break-max($main-break){
+        width: 14em;
+        left: 4em;
+        top: 2.2em;
+        font-size: 1.6em;
+      }
+      @include break-between($main-break, $main-break-lg){
+        width: 15em;
+        font-size: 2em;
+      }
+      @include break-between($main-break-lg, $main-break-xtrlg){
+        width: 27em;
+        font-size: 1.4em;
+      }
+    }
+  }
+  .layer-1{
+    top: 34em;
+    left: 3em;
+    @include break-max($main-break){
+      top: 24em;
+      left: 6em;
+    }
+    .line {
+      left: 5.4em;
+      top: 2.8em;
+    }
+    p{
+      left: 6em;
+      top: 3.2em;
+      width:13em;
+      @include break-max($main-break){
+        left: 4em;
+        top: 2.3em;
+      }
+      @include break-between($main-break, $main-break-lg){
+        left: 3em;
+        top: 2.2em;
+      }
+      @include break-between($main-break-lg, $main-break-xtrlg){
+        left: 5em;
+        top: 2.8em;
+      }
+    }
+  }
+  .layer-2{
+    top: 17em;
+    right: 20em;
+    @include break-max($main-break){
+      top: 14em;
+      left: 27em;
+    }
+    @include break-min($main-break-xxxtrlg){
+      top:19em;
+      right: 15em;
+    }
+    .line {
+      right: -16.5em;
+      top: 2.8em;
+    }
+    p{
+      left: 2.5em;
+      top: 1.8em;
+
+      @include break-max($main-break){
+        left: -13em;
+        top: 2.4em;
+      }
+      @include break-min($main-break-lg){
+        left: 4.3em;
+        top: 2.5em;
+        width: 14em;
+      }
+      @include break-min($main-break-xtrlg){
+        left: 6.3em;
+        top: 3.5em;
+      }
+      @include break-min($panel4-text-break6){
+        width: 23em;
+      }
+    }
+  }
+  .layer-3{
+    top: 10em;
+    left: 23em;
+    .line {
+      top: 3em;
+      left: -10.8em;
+    }
+    p{
+      top: 2.2em;
+      left: -13.3em;
+      width: 13em;
+      text-align: right;
+      @include break-max($main-break){
+        left: 3.5em;
+        top: 2.2em;
+      }
+      @include break-min($main-break-lg){
+        top: 2.7em;
+      }
+      @include break-min($main-break-xtrlg){
+        top: 3.7em;
+        font-size: 1em;
+      }
+      @include break-min($panel1-text-break2){
+        width: 25em;
+        left: -25.3em;
+      }
+    }
+  }
+  .layer-4{
+    top: 6em;
+    left: 28em;
+    @include break-max($main-break){
+      top: 3em;
+      left: 24em;
+    }
+    @include break-min($main-break-xtrlg){
+      left: 30em;
+    }
+    .line {
+      top: 3em;
+      right: -16.4em;   
+    }
+    p{
+      top: 2.2em;
+      left: 3em;
+      @include break-max($main-break){
+        top: 2.8em;
+        left: -12em;
+      }
+      @include break-min($main-break-lg){
+        top: 2.8em;
+        left: 4.5em;
+        width: 12em;
+      }
+      @include break-min($main-break-xtrlg){
+        top: 3.8em;
+        left: 6.5em;
+        width: 12em;
+      }
+      @include break-min($panel4-text-break6){
+        width: 22em;
+      }
+    }
+  }
+  .layer-5 {
+    top: 28em;
+    right:32.3em;
+    @include break-max($main-break){
+      top: 11em;
+      right: 13em;
+    }
+    @include break-min($main-break-xxtrlg){
+      top: 29em;
+      right: 30.3em;
+    }
+    .circle-outter {
+      width: 12.5em;
+      height: 12.5em;   
+      }
+    .circle-inner {
+      left: 1.25em;
+      top: 1.25em;
+      width: 10.1em;
+      height: 10.1em;
+    }
+    h3 {
+      font-size: 4em;
+      height: 1em;
+      color: $black;
+    }
+    .line {
+      right: -22.7em;
+      top: 6em;
+    }
+    p {
+      width: 12em;
+      top: 4em;
+      text-align: left;
+      left: 6.1em;
+      em {
+        color: $black;
+        font-weight: 700;
+      }
+      @include break-max($main-break){
+        width: 11em;
+        left: 6.1em;
+        top: 4em;
+      }
+
+      @include break-min($main-break-lg){
+        width: 16em;
+        top: 5.5em;
+        left: 9.5em;
+      }
+      @include break-min($main-break-xtrlg){
+        width: 16em;
+        top: 7em;
+        left: 13.5em;
+      }
+      @include break-min($main-break-xxtrlg){
+        width: 21em;
+      }
+    
+    } 
+  }
+
+}
+

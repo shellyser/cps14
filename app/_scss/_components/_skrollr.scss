@@ -1,0 +1,678 @@
+#intro {
+    -skrollr-animation-name: introanim1;
+}
+
+#intro-year {
+    -skrollr-animation-name: introyearanim1;
+}
+#intro-text {
+    -skrollr-animation-name: introtextanim1;
+}
+
+@-skrollr-keyframes introanim1 {
+    skrollr-0 {
+    }
+    _bstreetupper--500 {
+        @include transform(translate(0, 0%));
+    }
+    _bstreetupper {
+        @include transform(translate(0, -100%));
+    }
+}
+
+@-skrollr-keyframes introyearanim1 {
+  skrollr-0{
+    opacity:0; 
+  }
+  _bstreetupper--1900{
+    opacity:0; 
+  }
+  _bstreetupper--1600{
+    opacity:1
+  }
+}
+@-skrollr-keyframes introtextanim1 {
+  skrollr-0{
+    opacity:0; 
+  }
+  _bstreetupper--1600{
+    opacity:0; 
+  }
+  _bstreetupper--1300{
+    opacity:1
+  }
+}
+
+
+#street-upper {
+    -skrollr-animation-name: streetupperanim1;
+}
+
+@-skrollr-keyframes streetupperanim1 {
+    skrollr-0 {
+        display: block;
+    }
+    _bstreetupper--500 {
+        @include transform(translate(0, 100%));
+        display: block;
+    }
+    _bstreetupper {
+        @include transform(translate(0, 0%));
+    }
+    _astreetupper {
+        @include transform(translate(0, 0%));
+        display: block;
+    }
+    _bskyline {
+        @include transform(translate(0, -100%));
+        display: none;
+    }
+}
+
+#skyline {
+    -skrollr-animation-name: skylineanim1;
+}
+#one{
+    -skrollr-animation-name: skylineanim2;
+}
+ #two{
+    -skrollr-animation-name: skylineanim3;
+}
+ #three{
+    -skrollr-animation-name: skylineanim4;
+}
+
+@-skrollr-keyframes skylineanim1{
+  skrollr-0 {
+      display: none;
+  }
+  _astreetupper {
+      @include transform(translate(0, 100%));
+      display: block;
+  }
+  _bskyline {
+      @include transform(translate(0, 0%));
+      display: block;
+  }
+  _askyline {
+      @include transform(translate(0, 0%));
+      display: block;
+  }
+  _bbrick {
+      @include transform(translate(0, -100%));
+      display: none;
+  }
+}
+
+@-skrollr-keyframes skylineanim2{
+  _bskyline-800{
+    transform:translate(0,0%);
+  }
+  _bskyline-1400{
+    transform:translate(0,-100%);
+  }
+}
+
+
+ @-skrollr-keyframes skylineanim3{
+  _bskyline-1800{ 
+    transform:translate(0%,0%); 
+  }
+  _bskyline-2400{
+    transform:translate(0%,-100%); 
+  }
+  _bskyline-3100{
+    transform:translate(0%,-100%); 
+  }
+  _bskyline-3600{
+    transform:translate(0%,-200%); 
+  }
+ }  
+
+@-skrollr-keyframes skylineanim4{
+    _bskyline-3600{
+        transform:translate(0,-100%);
+      }
+      _bskyline-4500{
+        transform:translate(0,-200%);
+      }
+    }
+
+#brick {
+   -skrollr-animation-name: brickanim1;
+}
+@-skrollr-keyframes brickanim1{
+  skrollr-0{
+    display: none;
+  }
+   _askyline{
+    @include transform(translate(0,100%));
+    display: block
+   }
+   _bbrick{
+      @include transform(translate(0,0%));
+    }
+   _abrick{
+    @include transform(translate(0,0%)); 
+    display: block;
+   }
+   _bnycave{
+    @include transform(translate(0,-100%)); 
+    display: none;
+   }
+}
+
+#nycave {
+   -skrollr-animation-name: nycaveanim1;
+}
+
+@-skrollr-keyframes nycaveanim1 {
+  _abrick{
+    transform:translate(0,100%);
+  }
+   _bnycave{
+    transform:translate(0,0%); 
+    background-position:50% 0%;
+   }
+   _bnycave-1200{
+    background-position:50% 100%;  
+  }
+   _anycave{
+    transform:translate(0,0%); 
+   }
+   _bstreetlower{
+    transform:translate(0,-100%);
+   }
+}
+
+#street-lower{
+  -skrollr-animation-name: streetloweranim1;
+}
+
+@-skrollr-keyframes streetloweranim1 {
+   skrollr-0{
+      display: none;
+    }
+   _anycave{
+    transform:translate(0,100%); 
+    display: block;
+   }
+   _bstreetlower{
+    transform:translate(0,0%);
+   }
+   _astreetlower{
+    transform:translate(0,0%); 
+    display: block
+    }
+   _bfence{
+    transform:translate(0,-100%); 
+    display: none;
+   }
+}
+
+#taxi{
+  -skrollr-animation-name: taxianim1;
+}
+#circle-1{
+  -skrollr-animation-name: circle1anim2;
+}
+#circle-2{
+  -skrollr-animation-name: circle2anim3;
+}
+#circle-3{
+  -skrollr-animation-name: circle3anim4;
+}
+
+@-skrollr-keyframes taxianim1{
+   skrollr-0{
+    display: none;
+   }
+   _abridge{
+    transform:translate(0,100%); 
+    display: block;
+  }
+   _btaxi{
+    transform:translate(0,0%); 
+    display: block;
+  }
+   _ataxi{
+    transform:translate(0,0%);
+    display: block;
+  }
+   _boutro{
+    transform:translate(0,-100%); 
+    display: none;
+   } 
+}
+
+@-skrollr-keyframes circle1anim2{
+  _btaxi-600{
+    transform:translate(0,-75%); 
+    opacity: 0; 
+  }
+  _btaxi-1100{
+    transform:translate(0,0%); 
+    opacity: 1; 
+  }
+}
+@-skrollr-keyframes circle2anim3{
+  _btaxi-1600{
+    transform:translate(0,-75%); 
+    opacity: 0; 
+  }
+  _btaxi-2100{
+    transform:translate(0,0%); 
+    opacity: 1; 
+  }
+}
+@-skrollr-keyframes circle3anim4{
+  _btaxi-2500{
+    transform:translate(0,-75%); 
+    opacity: 0; 
+  }
+  _btaxi-3000{
+    transform:translate(0,0%); 
+    opacity: 1; 
+  }
+}
+
+#fence{
+  -skrollr-animation-name: fenceanim1;
+}
+
+@-skrollr-keyframes fenceanim1{
+  skrollr-0{
+    display: none;
+  }
+  _astreetlower{
+  transform:translate(0,100%); 
+  display: block;
+  } 
+  _bfence{
+  transform:translate(0,0%);
+  } 
+  _afence{
+  transform:translate(0,0%); 
+  display: block;
+  } 
+  _bbridge{
+  transform:translate(0,-100%); 
+  display: none;
+  } 
+}
+
+#bridge{
+  -skrollr-animation-name: bridgeanim1;
+}
+
+@-skrollr-keyframes bridgeanim1{
+   skrollr-0{
+    display: none;
+  } 
+   _afence{
+    transform:translate(0,100%); 
+    display: block;
+  } 
+   _bbridge{
+    transform:translate(0,0%)
+  } 
+   _abridge{
+    transform:translate(0,0%); 
+    display: block;
+  } 
+   _btaxi{
+    transform:translate(0,-100%); 
+    display: none;
+  }  
+}
+
+#outro{
+  -skrollr-animation-name: outroanim1;
+}
+
+@-skrollr-keyframes outroanim1{
+   skrollr-0{
+    display: none
+   } 
+   _ataxi{
+    transform:translate(0,100%); 
+    display: block;
+  } 
+   _boutro{
+    transform:translate(0,0%); 
+    display: block;
+  }
+}
+
+#ie {
+    #intro {
+        -skrollr-animation-name: introanim1ie;
+    }
+    #intro-year {
+        -skrollr-animation-name: introyear1ie;
+    }
+    #intro-text {
+        -skrollr-animation-name: introtext1ie;
+    }
+
+
+    @-skrollr-keyframes introyearanim1ie {
+      skrollr-0{
+        display:none; 
+      }
+      _bstreetupper--1900{
+        display:block; 
+      }
+    }
+    @-skrollr-keyframes introtextanim1ie {
+      skrollr-0{
+        display:none; 
+      }
+      _bstreetupper--1600{
+        display:block;  
+      }
+    }
+
+    @-skrollr-keyframes introanim1ie {
+        _bstreetupper--500 {
+            top: 0%;
+        }
+        _bstreetupper {
+            top: -100%;
+        }
+    }
+   
+    #street-upper {
+        -skrollr-animation-name: streetupperanim1ie;
+    }
+    @-skrollr-keyframes streetupperanim1ie {
+        _bstreetupper--500 {
+            top: 100%;
+        }
+        _bstreetupper {
+            top: 0%;
+        }
+        _astreetupper {
+            top: 0%;
+        }
+        _bskyline {
+            top: -100%;
+        }
+    }
+
+
+    #skyline {
+        -skrollr-animation-name: skylineanim1ie;
+    }
+  #one{
+         -skrollr-animation-name: skylineanim2ie;
+    }
+      #two{
+        -skrollr-animation-name: skylineanim3ie;
+    }
+      #three{
+        -skrollr-animation-name: skylineanim4ie;
+    }
+    
+    @-skrollr-keyframes skylineanim1ie {
+        _astreetupper {
+            top: 100%;
+        }
+        _bskyline {
+            top: 0%;
+        }
+        _askyline {
+            top: 0%;
+        }
+        _bbrick {
+            top: -100%;
+        }
+    }
+
+    @-skrollr-keyframes skylineanim2ie{
+     _bskyline-800{
+          top: 0%;
+          display: block;
+     }
+        _bskyline-1400{
+          top: -100%;
+          display:none;
+        }
+    }
+
+    @-skrollr-keyframes skylineanim3ie{
+      skrollr-0{
+        display: none;
+      }
+      _bskyline-1800{ 
+        top: 0%; 
+        display: block;
+      }
+      _bskyline-2400{
+        top: -100%; 
+      }
+      _bskyline-3100{
+        top: -100%; 
+        display: block;
+      }
+      _bskyline-3600{
+        top: -200%; 
+        display: none;
+      }
+    }
+
+    @-skrollr-keyframes skylineanim4ie{
+      skrollr-0{
+        display: none;
+      }
+      _bskyline-3600{
+        top: -100%;
+        display: block;
+      }
+      _bskyline-4500{
+        top:-200%;
+      }
+  }
+
+  #brick {
+     -skrollr-animation-name: brickanim1ie;
+  }
+  @-skrollr-keyframes brickanim1ie{
+    skrollr-0{
+      display: none;
+    }
+     _askyline{
+      top: 100%;
+      display: block;
+     }
+     _bbrick{
+        top: 0%;
+      }
+     _abrick{
+      top: 0%; 
+      display: block;
+     }
+     _bnycave{
+      top: -100%; 
+      display: none;
+     }
+  }
+
+  #nycave {
+     -skrollr-animation-name: nycaveanim1ie;
+  }
+
+  @-skrollr-keyframes nycaveanim1ie {
+    _abrick{
+      top: 100%;
+    }
+    _bnycave{
+      top: 0%; 
+      background-position:50% 0%;
+    }
+    _bnycave-1200{
+      background-position:50% 100%;  
+    }
+     _anycave{
+      top: 0%; 
+     }
+     _bstreetlower{
+      top: -100%;
+     }
+  }
+
+  #street-lower{
+    -skrollr-animation-name: streetloweranim1ie;
+  }
+
+  @-skrollr-keyframes streetloweranim1ie {
+     skrollr-0{
+        display: none;
+      }
+     _anycave{
+      top: 100%; 
+      display: block;
+     }
+     _bstreetlower{
+      top: 0%;
+     }
+     _astreetlower{
+      top: 0%; 
+      display: block;
+      }
+     _bfence{
+      top: -100%; 
+      display: none;
+     }
+  }
+
+  #taxi{
+    -skrollr-animation-name: taxianim1ie;
+  }
+  #circle-1{
+    -skrollr-animation-name: circle1anim2ie;
+  }
+  #circle-2{
+    -skrollr-animation-name: circle2anim3ie;
+  }
+  #circle-3{
+    -skrollr-animation-name: circle3anim4ie;
+  }
+
+  @-skrollr-keyframes taxianim1ie{
+     skrollr-0{
+      display: none;
+     }
+     _abridge{
+      top: 100%; 
+      display: block;
+    }
+     _btaxi{
+      top: 0%; 
+    }
+     _ataxi{
+      top: 0%;
+      display: block;
+    }
+     _boutro{
+      top: -100%; 
+      display: none;
+     } 
+  }
+
+  @-skrollr-keyframes circle1anim2ie{
+    _btaxi-600{
+      visibility: hidden; 
+    }
+    _btaxi-1100{
+      visibility: visible;
+    }
+  }
+  @-skrollr-keyframes circle2anim3ie{
+    _btaxi-1600{
+      visibility: hidden;
+    }
+    _btaxi-2100{
+      visibility: visible;
+    }
+  }
+  @-skrollr-keyframes circle3anim4ie{
+    _btaxi-2500{
+      visibility: hidden;
+    }
+    _btaxi-3000{
+      visibility: visible;
+    }
+  }
+
+  #fence{
+    -skrollr-animation-name: fenceanim1ie;
+  }
+
+  @-skrollr-keyframes fenceanim1ie{
+    skrollr-0{
+      display: none;
+    } 
+    _astreetlower{
+    top: 100%; 
+    display: block;
+    } 
+    _bfence{
+    top: 0%;
+    } 
+    _afence{
+    top: 0%; 
+    display: block;
+    } 
+    _bbridge{
+    top: -100%; 
+    display: none;
+    } 
+  }
+  #bridge{
+    -skrollr-animation-name: bridgeanim1ie;
+  }
+
+  @-skrollr-keyframes bridgeanim1ie{
+     skrollr-0{
+      display: none;
+    } 
+     _afence{
+      top: 100%; 
+      display: block;
+    } 
+     _bbridge{
+      top: 0%
+    } 
+     _abridge{
+      top: 0%; 
+      display: block;
+    } 
+     _btaxi{
+      top: -100%; 
+      display: none;
+    }  
+  }
+
+  #outro{
+    -skrollr-animation-name: outroanim1ie;
+  }
+
+  @-skrollr-keyframes outroanim1ie{
+     skrollr-0{
+      display: none;
+     }
+     _ataxi{
+      top: 100%; 
+      display: block;
+    } 
+     _boutro{
+      top: 0%; 
+      display: block;
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,128 @@
+#street-upper {
+    background-image: url("../assets/bgphotos/canal450.jpg");
+    @extend .backgroundimage;    
+    @include retina{
+        background-image: url("../assets/bgphotos/canal450@2x.jpg");
+    }   
+    @include break-min($main-break-lg){
+        background-image: url("../assets/bgphotos/canal1200.jpg");
+    }
+    @include break-min($main-break-xxtrlg){
+        background-image: url("../assets/bgphotos/canal.jpg");
+    }
+  .bottom{
+    background-color: $white;
+    @extend .verticalboxes;
+    min-height: rem(0.3);
+    top: rem(38);
+  }
+}
+#street-content{
+  position: relative;
+  text-align: center;
+  height: rem(25);
+  background-color: $black;
+  top: rem(5); 
+    .bottom {
+      background-color: $white;
+      @extend .verticalboxes;
+      min-height: rem(0.6);    
+      top: rem(25);
+  }
+  .top {
+    position: absolute;
+    &.left{
+      top: 12%;
+      min-height: rem(0.3);
+      background-color: $white;
+      width: rem(100);
+      background-color: $white;
+      left: 50%;
+      margin-right: -50%;
+      @include transform(translate(-111%,50%));   
+      &.orange {
+      background-color: $orange;
+     }
+    }
+    &.right{
+      top: 12%;
+      min-height: rem(0.3);
+      left: 50%;
+      margin-right: -50%;
+      width: rem(150);
+      @include transform(translate(-4%,50%));
+      background-color: $white;
+      min-width: 69%;
+       &.orange {
+       background-color: $orange;
+      }
+    }
+    &.asterick {
+      width: rem(2.5);
+      top: 7.5%;
+      top: 53%;
+      left: 50%;
+      margin-right: -50%;
+      @include transform(translate(-394%,-352%));
+      @include transform-origin(50%, 50%);
+     }    
+    }
+    @include break-min($panel2-line-break){
+      .top {
+        &.left{
+          @include transform(translate(-122%,50%));
+        }
+        &.right {
+          width: rem(409);
+        }
+        &.asterick {
+          @include transform(translate(-814%, -359%));
+        }
+      }
+    }
+  }
+  .street-text {
+      position: absolute;
+      width: 100%;
+      margin: auto;
+      top: 55%;
+      left: 50%;
+      padding: 5%;
+      margin-right: -50%;
+      @include transform(translate(-50%, -50%));
+      h1 {
+        font-size: rem(3.5);
+      }
+      p {
+        font-size: rem(1);
+        width: rem(21.6);
+        line-height: rem(1.8);
+        margin: auto;
+        margin-top: 3%;
+      }
+      @include break-between($panel3-text-break, $panel2-text-break3){
+        h1{
+          font-size: rem(5.3);
+        }
+        p{
+          font-size: rem(1);
+          width: rem(35);
+        }
+      }
+      @include break-min($panel2-text-break3){
+        h1 {
+          font-size: rem(8);
+        }
+        p {
+          font-size: rem(1);
+          width: rem(51);
+          line-height: rem(1.9);
+          margin-top: 1%;
+        }
+      }    
+      @include break-min($main-break-xxtrlg){
+        h1 {
+          font-size: rem(9);
+        }
+      }
+}
