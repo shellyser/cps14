@@ -1,11 +1,11 @@
 #taxi {
-  background-image: url("../assets/bgphotos/taxis350.jpg");
+  background-image: url("../assets/bgphotos/sky2450.jpg");
   @extend .backgroundimage;
    @include retina{
-            background-image: url("../assets/bgphotos/taxis350@2x.jpg");
+            background-image: url("../assets/bgphotos/sky2450@2x.jpg");
         }
   @include break-min($main-break-lg){
-  background-image: url("../assets/bgphotos/taxis1200.jpg");
+  background-image: url("../assets/bgphotos/sky21200.jpg");
   }
   @include break-min($panel4-text-break3){
     font-size: 18px;
@@ -14,24 +14,26 @@
     font-size: 23px;
   }
   @include break-min($main-break-xxtrlg){
-    background-image: url("../assets/bgphotos/taxis.jpg");
+    background-image: url("../assets/bgphotos/sky2.jpg");
     font-size: 28px;
   }
   @include break-min($main-break-xxxtrlg){
     font-size: 34px;
   }
   #taxi-header {
-    height: 3.2em;
-    top: 9%;
+    height: 5.2em;
+    top: 0%;
     z-index: 9999;
-    position: relative;
+    position: absolute;
     width: 100%;
     text-align: center;
+    bottom: 0;
+    margin: auto;
     h1 {
       font-size: 220%;
       line-height: 110%;
       @include text-shadow(rgba(0, 0, 0, 0.15) 4px 4px 5px); 
-      width: 75%;
+      width: 84%;
       margin: auto;     
     }
   }
@@ -57,7 +59,7 @@
         vertical-align: middle;
         text-align: center;
         display: block;
-        background-color: $black_60;
+        background-color: $color_blue_60;
         @include border-radius(50%);
         width: 11em;
         height: 11em;
@@ -81,13 +83,13 @@
           right: 0;
           h1 {
              font-size: 3.5em;
-             border-bottom: #0091d9 0.05em solid;
+             border-bottom: $green 0.05em solid;
              margin-bottom: 0.08em;
              padding-bottom: .08em;
           }
           p{
             line-height: 1.4em;
-            font-size: .7em;
+            font-size: .65em;
             width: 80%;
             margin: auto;
           }

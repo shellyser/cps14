@@ -43,8 +43,8 @@ header {
         min-height: 38%;
         width: rem(3);
         position: absolute;
-        border-left: #68d0ef rem(.3) solid;
-        border-bottom: #68d0ef rem(.4) solid;
+        border-left: #b5c178 rem(.3) solid;
+        border-bottom: #b5c178 rem(.4) solid;
         left: rem(3.4);
         top: 33%;
     }
@@ -141,7 +141,7 @@ header {
                 line-height: 1.5rem;
                 display: block;
                 margin: 5px auto;
-                width: 24rem;
+                width: 26rem;
                 @include text-shadow(rgba(0, 0, 0, 0.6) 2px 0px 2px);   
             }
         @include break-max($main-break){
@@ -160,7 +160,7 @@ header {
             #intro-text {
                font-size: rem(0.9);
                line-height: rem(1.75);
-               width: rem(28);
+               width: rem(29);
                text-align: left;
                margin-left: 2%;
                display: inline-block;
@@ -181,7 +181,7 @@ header {
                     text-align: left;
                     margin-left: rem(1.2);
                     display: inline-block;
-                    width: rem(31);
+                    width: rem(32);
                 }
             }   
             @include break-min($main-break-xxtrlg) {
@@ -199,7 +199,7 @@ header {
                     text-align: left;
                     margin-left: rem(2.3);
                     display: inline-block;
-                    width: rem(34);
+                    width: rem(35);
                 }
             }   
 

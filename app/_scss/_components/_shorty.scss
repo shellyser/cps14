@@ -35,6 +35,14 @@
       }
     }
   }
+
+  #brick{
+    #brick-content{
+        > div:first-of-type h1{
+          top: 50%; 
+       }   
+    }
+  }
   #fence{
     #fence-header{
       height: rem(6);

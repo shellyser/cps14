@@ -12,12 +12,12 @@
    @extend .backgroundimage;  
    #fence-header{
     width: 100%;
-    height: rem(9);
+    height: rem(7);
     background-color: $black_60;
     text-align: center;
     h1{
       font-weight: 700;
-      font-size: rem(1.6);
+      font-size: rem(2);
       line-height: rem(1.9);
       padding-top: rem(3);
     }
@@ -61,39 +61,18 @@
             background-image: url("../assets/logo_abcnews_white.png");
           }
         }
-        &#fox{
-          background-image: url("../assets/logo_fox.svg");
+        &#marketwatch{
+          background-image: url("../assets/logo_marketwatch.svg");
+          @include background-size(75%);
           &:hover{
-            background-image: url("../assets/logo_fox_white.svg");
+            background-image: url("../assets/logo_marketwatch_white.svg");
           }
         }
-        &#gothamist{
-          background-image: url("../assets/logo_gothamist.svg");
-          background-position: 50% 52%;
-          @include background-size(53%);
-          &:hover{
-            background-image: url("../assets/logo_gothamist_white.svg");
-          }
-        }
-        &#nyc1{
-          background-image: url("../assets/logo_nyc1.svg");
-          background-position: 50% 61%;
-          @include background-size(45%);
-          &:hover{
-            background-image: url("../assets/logo_nyc1_white.svg");
-          }
-        }
+
         &#wired{
           background-image: url("../assets/logo_wired.svg");
           &:hover{
             background-image: url("../assets/logo_wired_white.svg");
-          }
-        }
-        &#dna{
-          background-image: url("../assets/logo_dna.svg");
-          @include background-size(46%);
-          &:hover{
-            background-image: url("../assets/logo_dna_white.svg");
           }
         }
       }
@@ -107,7 +86,7 @@
       }
       @include break-min($panel2-line-break){
         width: rem(54);
-        height: rem(34);
+        height: rem(23);
         .circle{
           width: rem(15);
           height: rem(15);

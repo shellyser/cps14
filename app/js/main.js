@@ -52,18 +52,18 @@ $(document).ready(function () {
 			console.log(data.curTop); 
 	     	if(data.curTop >= 37300){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
-	    	        Counter: 6.5
+	    	        Counter: 97
 	    	    	}, {
 	    	        duration: 2000,
 	    	        easing: 'swing',
-	    	        progress: function(now) {
-	    	            $(this).text(Math.ceil(this.Counter*10)/10);
+	    	        step: function(now) {
+	    	            $(this).text(Math.ceil(now));
 	    	          }
 	       	 	});
 	    	}
 	    	if(data.curTop >= 38300){
 	    		$('#circles #circle-2 h1 span').prop('Counter',0).animate({
-	    	          Counter: 1
+	    	          Counter: 30
 	    	      		}, {
 	    	          duration: 2000,
 	    	          easing: 'swing',
@@ -74,7 +74,7 @@ $(document).ready(function () {
 	    }
     		if(data.curTop >= 39200){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
-		           Counter: 25
+		           Counter: 33
 		      	 	}, {
 		           duration: 2000,
 		           easing: 'swing',
@@ -159,7 +159,7 @@ $(document).ready(function () {
 	//ie replacement for calc in intro section
 	$('#ie #intro-content').css({'height': winH - (50 - 86) + 'px'});
 	//// calc in intro section
-	$('#fence-content').css({'height': winH - 126 + 'px'});	
+	$('#fence-content').css({'height': winH - 100 + 'px'});	
 	////ie replacement for calc in intro section
 	$('#ie #fence-content').css({'height': winH - 112 + 'px'});	
 								

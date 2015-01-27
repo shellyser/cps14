@@ -21,7 +21,6 @@
   #map-header{
     background-color: $white;
     color: $dark_blue;
-    font-weight: 700;
     height: 8.2em;
     top: 10%;
     z-index: 9999;
@@ -29,8 +28,8 @@
     h1 {
       position: absolute;
       width: 100%;
-      font-size: 300%;
-      font-weight: 400;
+      font-size: 250%;
+      font-weight: 700;
       margin: 0;
       top: 50%;
       left: 50%;
