@@ -28,7 +28,7 @@
     opacity:0; 
   }
   _bstreetupper--1600{
-    opacity:1
+    opacity:1;
   }
 }
 @-skrollr-keyframes introtextanim1 {
@@ -39,7 +39,7 @@
     opacity:0; 
   }
   _bstreetupper--1300{
-    opacity:1
+    opacity:1;
   }
 }
 
@@ -355,12 +355,14 @@
         -skrollr-animation-name: introtext1ie;
     }
 
-
     @-skrollr-keyframes introyearanim1ie {
       skrollr-0{
         display:none; 
       }
-      _bstreetupper--1900{
+      _bstreetupper--1900{ 
+        display:none; 
+      }
+      _bstreetupper--1600{
         display:block; 
       }
     }
@@ -369,6 +371,9 @@
         display:none; 
       }
       _bstreetupper--1600{
+        display:block;  
+      }
+      _bstreetupper--1300{
         display:block;  
       }
     }
@@ -673,6 +678,25 @@
   }
 }
 
-
+#ie9{
+    #brick {
+        #brick-content{
+            img{
+              -skrollr-animation-name: brickanim1ie9;
+              }
+        }
+              @-skrollr-keyframes brickanim1ie9{
+                skrollr-0{
+                  display: none;
+                }
+                 _askyline{
+                  display: none;
+                 }
+                 _bnycave{
+                  display: none;
+                 }
+              }
+        }      
+}
 
 

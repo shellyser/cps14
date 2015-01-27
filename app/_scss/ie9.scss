@@ -1,0 +1,161 @@
+@import "main";
+
+#intro{
+  #intro-content{
+    .box{
+      display: none;
+    }
+    .asterick{
+      display: none;
+    }
+    #intro-content-top{
+      #intro-title{
+        padding: 2%;
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        height: rem(4.5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    #intro-content-bottom{
+      #intro-section{
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        height: rem(10);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        #intro-year{
+          display: inline-block;
+          float: left;
+        }
+        #intro-text{
+          display: inline-block;
+          float: right;
+          width: rem(35);
+        }
+      }
+    }
+   }
+   footer{
+    height: 50px;
+   }
+}
+
+#street-upper{
+  #street-content{
+    .top{
+      display:none;
+    }
+    .asterick{
+      display:none;
+    }
+    .street-text{
+      height: rem(10.5);
+      width: 90%;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin: auto;
+    }
+  }
+}
+
+#skyline{
+  .triangle-1, .triangle-2{
+    display:none;
+  }
+  .skyline-container{
+    background-color: $black;
+    @include opacity(.5);
+    .skyline-content{
+      h1{
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        height: rem(3);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+#brick{
+  #brick-content{
+    h1#brick-text{
+      position: absolute;
+      width: 12em;
+      text-align: left;
+      display: block;
+      margin: auto;
+      top: 40%;
+      left: 0;
+      right: 0;
+      height: 7em;
+    }
+    img{
+        display: none;
+    }
+    .right-panel{
+      right: 0;
+      position: absolute;
+      .circle{
+        width: 22.5em;
+        height: 22.5em;
+        position: absolute;
+        right: 0;
+        margin: auto;
+        left:0;
+        top:0;
+        bottom:0;
+        padding: 5%;
+        h1{
+          padding: auto;
+          display: block;
+          position: absolute;
+          right: 0;
+          margin: auto;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          height: 1em;
+        }
+      }
+    }
+  }   
+}
+
+#bridge{
+  #bridge-overlay{
+    background-color: $color_blue;
+    @include opacity(0.9);
+  }
+  #bridge-content{
+    h1{
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+      margin: auto;
+      height: rem(2);
+    }
+  }
+}
+
+#outro{
+    #closing{
+        #logos{
+
+        }
+    }
+}

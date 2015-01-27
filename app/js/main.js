@@ -26,7 +26,7 @@ $(document).ready(function () {
 	beforeNycave = afterBrick + transition,
 	afterNycave = beforeNycave + panel,
 	beforeStreetLower = afterNycave + transition,
-	afterStreetLower = beforeStreetLower + panel*2.9,
+	afterStreetLower = beforeStreetLower + panel*1.9,
 	beforeFence = afterStreetLower + transition,
 	afterFence = beforeFence + panel,
 	beforeBridge = afterFence + transition,
@@ -50,7 +50,7 @@ $(document).ready(function () {
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			console.log(data.curTop); 
-	     	if(data.curTop >= 37300){
+	     	if(data.curTop >= 34300){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
 	    	        Counter: 97
 	    	    	}, {
@@ -61,7 +61,7 @@ $(document).ready(function () {
 	    	          }
 	       	 	});
 	    	}
-	    	if(data.curTop >= 38300){
+	    	if(data.curTop >= 35300){
 	    		$('#circles #circle-2 h1 span').prop('Counter',0).animate({
 	    	          Counter: 30
 	    	      		}, {
@@ -72,7 +72,7 @@ $(document).ready(function () {
 	    	          }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 39200){
+    		if(data.curTop >= 36200){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
 		           Counter: 33
 		      	 	}, {
@@ -214,6 +214,8 @@ $(window).resize(function () {
 	$('.shorty #intro-content').css({'height': winHR - (winHR * (11 / 100)) - 86 + 'px'});
 	//ie replacement for calc in intro section
 	$('#ie #intro-content').css({'height': winHR - (50 - 86) + 'px'});
+	$('#ie9 #intro-content').css({'height': winHR - (50 - 86) + 'px'});
+
 	//// calc in intro section
 	$('#fence-content').css({'height': winHR - 126 + 'px'});	
 	////ie replacement for calc in intro section

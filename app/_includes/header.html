@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if lte IE 8]><html id="ie" class="no-js" lang="en"><![endif]-->
-<!--[if gt IE 8]><html class="no-js"  lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9"  lang="en"><![endif]-->
 <!--[if !IE ]><!--><html lang="en" class="no-js" ><!--<![endif]-->
   <head>
     <meta charset="utf-8">
@@ -15,20 +15,18 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="/stylesheets/normalize.css">
 
-    <!--[if gte IE 9]>
-    <!-- build:css({app,.tmp}) stylesheets/main.css -->
-    <link href="/stylesheets/main.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
-    <!-- endbuild -->
-    <![endif]-->
     <!--[if !IE]> -->
   <!-- build:css({app,.tmp}) stylesheets/main.css -->
     <link href="/stylesheets/main.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
     <!-- endbuild -->
     <!-- <![endif]-->
+
+    <!--[if IE 9]>
+        <link href="/stylesheets/ie9.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
+    <![endif]-->
+
     <!--[if lt IE 9]>
-     <!-- build:css({app,.tmp}) stylesheets/ie.css -->
-<!--         <link href="/stylesheets/ie.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
- -->    <!-- endbuild -->
+        <link href="/stylesheets/ye-olde-ie.css" rel="stylesheet" type="text/css" data-skrollr-stylesheet>
     <![endif]--> 
 
     <!-- build:js(app) /js/head-scripts.js -->

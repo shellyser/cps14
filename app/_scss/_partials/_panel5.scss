@@ -30,11 +30,11 @@
     }
     @include break-min($main-break-xtrlg) {
       font-size: rem(3.5);
-      line-height: rem(3.5);
+      line-height: rem(4.1);
     }
     @include break-min($main-break-xxtrlg) {
       font-size: rem(4.2);
-      line-height: rem(4.2);
+      line-height: rem(4.6);
     }
   }
 }

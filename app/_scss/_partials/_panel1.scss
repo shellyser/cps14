@@ -105,13 +105,13 @@ header {
             @include transform(translate(-50%, -50%));
             font-size: rem(2.7);
             @include break-min($main-break-lg) {
-                font-size: rem(3.5);
+                font-size: rem(3);
             }
             @include break-min($panel1-text-break2) {
-                font-size: rem(4.1);
+                font-size: rem(3.5);
             }
             @include break-min($main-break-xxtrlg) {
-                font-size: rem(4.7);
+                font-size: rem(4.1);
             }
         }
     }   

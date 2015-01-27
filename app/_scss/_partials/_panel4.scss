@@ -45,6 +45,7 @@
       bottom:0;
       right:0;
       left:0;
+      font-size: 16px;
       @include break-max($main-break){
         width: 95%;
       }
