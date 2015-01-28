@@ -59,7 +59,8 @@
     bottom: 0;
     #map {
       @include opacity(0.15);
-      width: 100%;
+      width: 90%;
+      height: 100%;
     }
     @include break-max($main-break){
       width: 36em;
