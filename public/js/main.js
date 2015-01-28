@@ -129,11 +129,12 @@ $(document).ready(function () {
 	  function onReady(callback) {
 	      var intervalID = window.setInterval(checkReady, 1000);
 
-	      function checkReady() {
-	          if (document.getElementsByTagName('body')[0] !== undefined) {
-	              window.clearInterval(intervalID);
-	              callback.call(this);
-	          }
+      function checkReady() {
+      		$('section').imagesLoaded( function() {
+      		  window.clearInterval(intervalID);
+      		  callback.call(this);
+      		  console.log("all images are loaded");
+      		});
 	      }
 	  }
 
