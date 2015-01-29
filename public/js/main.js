@@ -50,7 +50,7 @@ $(document).ready(function () {
 		render: function(data) {
 	        //Debugging - Log the current scroll position.
 			console.log(data.curTop); 
-	     	if(data.curTop >= 34300){
+	     	if(data.curTop >= 39100){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
 	    	        Counter: 97
 	    	    	}, {
@@ -61,7 +61,7 @@ $(document).ready(function () {
 	    	          }
 	       	 	});
 	    	}
-	    	if(data.curTop >= 35300){
+	    	if(data.curTop >= 40100){
 	    		$('#circles #circle-2 h1 span').prop('Counter',0).animate({
 	    	          Counter: 30
 	    	      		}, {
@@ -72,7 +72,7 @@ $(document).ready(function () {
 	    	          }
 	       	 });			       	 
 	    }
-    		if(data.curTop >= 36200){
+    		if(data.curTop >= 41010){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
 		           Counter: 33
 		      	 	}, {
