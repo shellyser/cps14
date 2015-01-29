@@ -26,7 +26,7 @@ $(document).ready(function () {
 	beforeNycave = afterBrick + transition,
 	afterNycave = beforeNycave + panel,
 	beforeStreetLower = afterNycave + transition,
-	afterStreetLower = beforeStreetLower + panel*1.9,
+	afterStreetLower = beforeStreetLower + panel*3.5,
 	beforeFence = afterStreetLower + transition,
 	afterFence = beforeFence + panel,
 	beforeBridge = afterFence + transition,
@@ -129,11 +129,12 @@ $(document).ready(function () {
 	  function onReady(callback) {
 	      var intervalID = window.setInterval(checkReady, 1000);
 
-	      function checkReady() {
-	          if (document.getElementsByTagName('body')[0] !== undefined) {
-	              window.clearInterval(intervalID);
-	              callback.call(this);
-	          }
+      function checkReady() {
+      		$('section').imagesLoaded( function() {
+      		  window.clearInterval(intervalID);
+      		  callback.call(this);
+      		  console.log("all images are loaded");
+      		});
 	      }
 	  }
 

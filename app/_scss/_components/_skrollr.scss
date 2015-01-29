@@ -106,35 +106,35 @@
 
 @-skrollr-keyframes skylineanim2{
   _bskyline-800{
-    transform:translate(0,0%);
+    @include transform(translate(0,0%));
   }
   _bskyline-1400{
-    transform:translate(0,-100%);
+    @include transform(translate(0,-100%));
   }
 }
 
 
  @-skrollr-keyframes skylineanim3{
   _bskyline-1800{ 
-    transform:translate(0%,0%); 
+    @include transform(translate(0%,0%)); 
   }
   _bskyline-2400{
-    transform:translate(0%,-100%); 
+    @include  transform(translate(0%,-100%)); 
   }
   _bskyline-3100{
-    transform:translate(0%,-100%); 
+    @include transform(translate(0%,-100%)); 
   }
   _bskyline-3600{
-    transform:translate(0%,-200%); 
+    @include transform(translate(0%,-200%)); 
   }
  }  
 
 @-skrollr-keyframes skylineanim4{
     _bskyline-3600{
-        transform:translate(0,-100%);
+        @include transform(translate(0,-100%));
       }
       _bskyline-4500{
-        transform:translate(0,-200%);
+        @include transform(translate(0,-200%));
       }
     }
 
@@ -168,20 +168,20 @@
 
 @-skrollr-keyframes nycaveanim1 {
   _abrick{
-    transform:translate(0,100%);
+    @include transform(translate(0,100%));
   }
    _bnycave{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
     background-position:50% 0%;
    }
    _bnycave-1200{
     background-position:50% 100%;  
   }
    _anycave{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
    }
    _bstreetlower{
-    transform:translate(0,-100%);
+    @include transform(translate(0,-100%));
    }
 }
 
@@ -194,18 +194,18 @@
       display: none;
     }
    _anycave{
-    transform:translate(0,100%); 
+    @include transform(translate(0,100%)); 
     display: block;
    }
    _bstreetlower{
-    transform:translate(0,0%);
+    @include transform(translate(0,0%));
    }
    _astreetlower{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
     display: block
     }
    _bfence{
-    transform:translate(0,-100%); 
+    @include transform(translate(0,-100%)); 
     display: none;
    }
 }
@@ -228,50 +228,50 @@
     display: none;
    }
    _abridge{
-    transform:translate(0,100%); 
+    @include transform(translate(0,100%)); 
     display: block;
   }
    _btaxi{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
     display: block;
   }
    _ataxi{
-    transform:translate(0,0%);
+    @include transform(translate(0,0%));
     display: block;
   }
    _boutro{
-    transform:translate(0,-100%); 
+    @include transform(translate(0,-100%)); 
     display: none;
    } 
 }
 
 @-skrollr-keyframes circle1anim2{
   _btaxi-600{
-    transform:translate(0,-75%); 
+    @include transform(translate(0,-75%)); 
     opacity: 0; 
   }
   _btaxi-1100{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
     opacity: 1; 
   }
 }
 @-skrollr-keyframes circle2anim3{
   _btaxi-1600{
-    transform:translate(0,-75%); 
+    @include transform(translate(0,-75%)); 
     opacity: 0; 
   }
   _btaxi-2100{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
     opacity: 1; 
   }
 }
 @-skrollr-keyframes circle3anim4{
   _btaxi-2500{
-    transform:translate(0,-75%); 
+    @include transform(translate(0,-75%)); 
     opacity: 0; 
   }
   _btaxi-3000{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
     opacity: 1; 
   }
 }
@@ -285,18 +285,18 @@
     display: none;
   }
   _astreetlower{
-  transform:translate(0,100%); 
+  @include transform(translate(0,100%)); 
   display: block;
   } 
   _bfence{
-  transform:translate(0,0%);
+  @include transform(translate(0,0%));
   } 
   _afence{
-  transform:translate(0,0%); 
+  @include transform(translate(0,0%)); 
   display: block;
   } 
   _bbridge{
-  transform:translate(0,-100%); 
+  @include transform(translate(0,-100%)); 
   display: none;
   } 
 }
@@ -310,18 +310,18 @@
     display: none;
   } 
    _afence{
-    transform:translate(0,100%); 
+    @include transform(translate(0,100%)); 
     display: block;
   } 
    _bbridge{
-    transform:translate(0,0%)
+    @include transform(translate(0,0%));
   } 
    _abridge{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
     display: block;
   } 
    _btaxi{
-    transform:translate(0,-100%); 
+    @include transform(translate(0,-100%)); 
     display: none;
   }  
 }
@@ -335,11 +335,11 @@
     display: none
    } 
    _ataxi{
-    transform:translate(0,100%); 
+    @include transform(translate(0,100%)); 
     display: block;
   } 
    _boutro{
-    transform:translate(0,0%); 
+    @include transform(translate(0,0%)); 
     display: block;
   }
 }
