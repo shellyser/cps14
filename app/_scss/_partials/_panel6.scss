@@ -150,11 +150,13 @@
       @include break-min($main-break-lg){
         left: 4.3em;
         top: 2.5em;
-        width: 20em;
+        width: 18em;
       }
-      @include break-min($main-break-xtrlg){
+      @include break-min($panel1-text-break2){
         left: 6.3em;
         top: 3.5em;
+      }
+      @include break-min($main-break-xxxtrlg){
         width: 30em;
       }
     }

@@ -12,22 +12,40 @@
    @extend .backgroundimage;  
    #fence-header{
     width: 100%;
-    height: rem(7);
+    height: rem(15);
     background-color: $black_60;
     text-align: center;
+    @include break-min($main-break-lg){
+      height: rem(12);
+    }
+    @include break-min($panel4-text-break5){
+      height: rem(9);
+    }
     h1{
       font-weight: 700;
       font-size: rem(2);
-      line-height: rem(1.9);
+      line-height: rem(2.4);
       padding-top: rem(3);
+      width: rem(25);
+      margin: auto;
+      @include break-min($main-break-lg){
+        width: rem(36);
+      }
+      @include break-min($main-break-xtrlg){
+        width: rem(45);
+      }
+      @include break-min($panel4-text-break5){
+        width: 100%;
+      }
+      em{
+        font-size: rem(1.6);
+        font-weight: 400;
+      }
     }
-    @include break-min($panel8-text-break){
-      font-size: rem(2);
-    }
-   }
+  }
   #fence-content {  
     width: 100%;
-    @include calc(height, "100% - 8rem");
+    @include calc(height, "100% - 12rem");
     position: relative;
     .circles{
       width: rem(27);

@@ -45,13 +45,25 @@
   }
   #fence{
     #fence-header{
-      height: rem(6);
+      height: rem(9);
       h1{
-        padding-top: 2rem;
+        line-height: rem(1.8);
+        em{
+          font-size: rem(1.1);     
+          font-weight: 400;
+        }
+      }
+      @include break-min($main-break-lg){
+        height: rem(10);
+        h1{
+          padding-top: rem(2);
+          line-height: rem(2.1);
+        }
       }
     }
+      
     #fence-content{
-      @include calc(height, "100% - rem(6)");
+      @include calc(height, "100% - rem(10)");
       @include break-min($panel2-line-break){
         .circles{
           width: rem(40);
