@@ -1,0 +1,102 @@
+.shorty{
+  #intro{
+    header{
+      height: 60px;
+      img{
+        margin-top: 4px;
+        width: 125px;
+        height: 33px;
+      }
+      h2{
+        margin-top: 0px;
+      }
+    }
+    #intro-content{
+      @include calc(height, "100% - 60px - 46px");
+    }
+    footer{
+      height: 46px;
+      padding: rem(0.3);
+      #footer-content {
+            height: 3.5em;
+         }
+      img{
+        width: 33px;
+      }
+      h3 {
+        display: none;
+      }
+    }
+  }
+  #street-lower{
+    @include break-min($main-break-xtrlg){
+      #map-wrapper{
+        font-size: 13px;
+      }
+    }
+  }
+
+  #brick{
+    #brick-content{
+        > div:first-of-type h1{
+          top: 50%; 
+       }   
+    }
+  }
+  #fence{
+    #fence-header{
+      height: rem(9);
+      h1{
+        line-height: rem(1.8);
+        em{
+          font-size: rem(1.1);     
+          font-weight: 400;
+        }
+      }
+      @include break-min($main-break-lg){
+        height: rem(10);
+        h1{
+          padding-top: rem(2);
+          line-height: rem(2.1);
+        }
+      }
+    }
+      
+    #fence-content{
+      @include calc(height, "100% - rem(10)");
+      @include break-min($panel2-line-break){
+        .circles{
+          width: rem(40);
+          height: rem(20);
+          .circle{
+            width: rem(11);
+            height: rem(11);
+            margin: rem(.3);
+          }
+        }
+      }
+    }
+  }
+  #outro{
+    wrapper:first-of-type{
+      @include calc(height, "100% - 53px");
+    }
+    #closing{
+      height: 56px;
+      padding-top: 0.7rem;
+      p{
+        font-size: .9rem;
+        padding-bottom: .6rem;
+        line-height: 0rem;
+      }
+      #logos {
+        img {
+          width: 90px;
+        }
+        #thinkeco-logo{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

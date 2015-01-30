@@ -1,0 +1,118 @@
+#fence {
+  background-image: url("../assets/bgphotos/river450.jpg");   
+  @include retina{
+            background-image: url("../assets/bgphotos/river450@2x.jpg");
+        }
+  @include break-min($main-break-lg){
+      background-image: url("../assets/bgphotos/river1200@2x.jpg");
+  }
+  @include break-min($main-break-xxtrlg){
+      background-image: url("../assets/bgphotos/river.jpg");
+   }
+   @extend .backgroundimage;  
+   #fence-header{
+    width: 100%;
+    height: rem(15);
+    background-color: $black_60;
+    text-align: center;
+    @include break-min($main-break-lg){
+      height: rem(12);
+    }
+    @include break-min($panel4-text-break5){
+      height: rem(9);
+    }
+    h1{
+      font-weight: 700;
+      font-size: rem(2);
+      line-height: rem(2.4);
+      padding-top: rem(3);
+      width: rem(25);
+      margin: auto;
+      @include break-min($main-break-lg){
+        width: rem(36);
+      }
+      @include break-min($main-break-xtrlg){
+        width: rem(45);
+      }
+      @include break-min($panel4-text-break5){
+        width: 100%;
+      }
+      em{
+        font-size: rem(1.6);
+        font-weight: 400;
+      }
+    }
+  }
+  #fence-content {  
+    width: 100%;
+    @include calc(height, "100% - 12rem");
+    position: relative;
+    .circles{
+      width: rem(27);
+      height: rem(16);
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      @include transition(transform 0.5s ease-in);
+      .circle {
+        display: inline-block;
+        background-color: $white_90;
+        @include border-radius(50%);
+        width: rem(7);
+        height: rem(7);
+        margin: rem(.5);
+        background-position: center center;
+        background-repeat: no-repeat;
+        @include background-size(60%);
+        &:hover{
+          background-color: $color_blue;
+        }
+        &#abc{
+          background-image: url("../assets/logo_abcnews.png");
+          background-position: 50% 51%;
+          @include background-size(52%);
+          &:hover{
+            background-image: url("../assets/logo_abcnews_white.png");
+          }
+        }
+        &#marketwatch{
+          background-image: url("../assets/logo_marketwatch.svg");
+          @include background-size(75%);
+          &:hover{
+            background-image: url("../assets/logo_marketwatch_white.svg");
+          }
+        }
+
+        &#wired{
+          background-image: url("../assets/logo_wired.svg");
+          &:hover{
+            background-image: url("../assets/logo_wired_white.svg");
+          }
+        }
+      }
+      @include break-min($panel3-text-break){
+        width: rem(34);
+        height: rem(23);
+        .circle{
+          width: rem(10);
+          height: rem(10);
+        }
+      }
+      @include break-min($panel2-line-break){
+        width: rem(54);
+        height: rem(23);
+        .circle{
+          width: rem(15);
+          height: rem(15);
+          margin: rem(.9);
+        }
+      }
+      
+    }
+  }
+}
+

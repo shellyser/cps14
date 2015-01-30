@@ -1,0 +1,62 @@
+#bridge {
+  background-image: url("../assets/bgphotos/basketball450.jpg");
+  @include retina{
+            background-image: url("../assets/bgphotos/basketball450@2x.jpg");
+        }
+  @extend .backgroundimage;       
+  @include break-min($main-break-lg){
+        background-image: url("../assets/bgphotos/basketball1200.jpg");
+  }
+  @include break-min($main-break-xxtrlg){
+      background-image: url("../assets/bgphotos/basketball.jpg");
+  }
+  #bridge-overlay{
+    background-color: $dark_blue;
+    @include opacity(.9);
+    width: 100%;
+    height: 100%;
+  }
+  #bridge-content { 
+    font-size: rem(1.6);
+    font-weight: 700;
+    line-height: rem(2.2);
+    width: 88%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    h1 {
+      margin: 0;
+      display: block;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      position: absolute;
+      @include transform(translate(-50%, -50%));
+      @include break-min($panel3-text-break) {
+        font-size: rem(2);
+        line-height: rem(2.8);
+        padding: 1%;
+      }
+      @include break-min ($panel8-text-break) {
+        font-size: rem(2.6);
+        line-height: rem(3);
+        padding: 1%;
+      }
+      @include break-between($panel2-line-break, $panel4-text-break2){
+        font-size: rem(3.2);
+        line-height: rem(3.2);
+      }
+      @include break-between($panel4-text-break2, $main-break-xxtrlg){
+        font-size: rem(3.5);
+        line-height: rem(3.7);
+      }
+      @include break-min($main-break-xxtrlg) {
+        font-size: rem(3.8);
+        line-height: rem(3.8);
+      }
+    }  
+  }
+}

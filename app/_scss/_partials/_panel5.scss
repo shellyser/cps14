@@ -1,0 +1,40 @@
+#nycave {
+  background-image: url("../assets/bgphotos/window450.jpg");  
+  @extend .backgroundimage;  
+   @include retina{
+            background-image: url("../assets/bgphotos/window450@2x.jpg");
+        }   
+  @include break-min($main-break-lg){
+      background-image: url("../assets/bgphotos/window1200.jpg");
+  }
+  @include break-min($main-break-xxtrlg){
+      background-image: url("../assets/bgphotos/window.jpg");
+  }
+  > h1 {
+    font-size: rem(1.6);
+    font-weight: 700;
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    line-height: rem(1.9);
+    height: rem(12);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include text-shadow(rgba(0, 0, 0, 0.15) 4px 4px 5px); 
+    @include break-min($panel3-text-break) {
+      font-size: rem(2.6);
+      line-height: rem(2.9);
+    }
+    @include break-min($main-break-xtrlg) {
+      font-size: rem(3.5);
+      line-height: rem(4.1);
+    }
+    @include break-min($main-break-xxtrlg) {
+      font-size: rem(4.2);
+      line-height: rem(4.6);
+    }
+  }
+}
