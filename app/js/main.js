@@ -74,7 +74,7 @@ $(document).ready(function () {
 	    }
     		if(data.curTop >= 41010){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
-		           Counter: 33
+		           Counter: 34317
 		      	 	}, {
 		           duration: 2000,
 		           easing: 'swing',
