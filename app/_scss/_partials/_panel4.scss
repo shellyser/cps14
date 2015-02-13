@@ -55,7 +55,7 @@
       img {
         position: absolute;
         top: 22em;
-        left: 3%;
+        left: 5%;
         width: 67%;
         z-index: 1;
         @include break-between($panel4-text-break6, $panel4-text-break5){
@@ -84,12 +84,12 @@
         position: absolute;
         right: 1em;
         width: 12em;
-        font-size: 2.1em;
+        font-size: 1.1em;
         line-height: 1.3em;
         text-align: left;
         display: block;
         margin: 0;
-        top: 45%;
+        top: 56%;
         left: 61%;
         margin-right: -50%;
         @include transform(translate(-50%, -50%));
@@ -98,19 +98,25 @@
             font-size: 2em;
             left: 52%;
             }
+          @include break-min($panel2-line-break){
+            top: 48%;
+            left: 57%;
+            font-size: 2.1em;
+          }
           @include break-min($main-break-xxtrlg){
             width: 13em;
+            font-size: 2.1em;
             top: 50%;
             } 
-
           }
         }
       &:nth-of-type(2n) {
         right: 0;
         position: absolute;
         .circle {
-          width: 22.5em;
-          height: 22.5em;
+
+          width: 11em;
+          height: 11em;
           @include border-radius(50%);
           background-color: $white_60;
           position: absolute;
@@ -124,8 +130,16 @@
             width: 18.5em;
             height: 18.5em;
           }
+          @include break-min($panel4-text-break){
+            width: 13em;
+            height: 13em;
+          }
+          @include break-min($main-break-xxtrlg){
+            width: 22.5em;
+            height: 22.5em;
+          }
           h1 {
-            font-size: 7.2em;
+            font-size: 4em;
             padding: auto;
             display: block;
             position: absolute;
@@ -135,6 +149,12 @@
             top: 0;
             bottom: 0;
             height: 1em;
+            @include break-min($panel4-text-break){
+              font-size: 6.2em;
+            }
+            @include break-min($main-break-xxtrlg){
+              font-size: 9em;
+            }
           }
         }
       }
