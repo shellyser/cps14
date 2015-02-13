@@ -74,11 +74,7 @@ $(document).ready(function () {
 	    }
     		if(data.curTop >= 41010){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
-<<<<<<< HEAD
-		           Counter: 33
-=======
 		           Counter: 12
->>>>>>> d3c7c270bf41496dc4e76bb216a5391f05af4dd9
 		      	 	}, {
 		           duration: 2000,
 		           easing: 'swing',
@@ -183,7 +179,8 @@ $(document).ready(function () {
 	//size background-box in slide 8
 	// $('#fence-content').css({"width": winW - (winW * 0.2) + 'px'});
 	// $('#fence-content').css({"height": winH - (winH * 0.2) + 'px'});
-		
+	
+			
 
 });
 $(window).resize(function () {

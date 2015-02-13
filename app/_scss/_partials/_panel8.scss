@@ -63,13 +63,11 @@
         width: rem(7);
         height: rem(7);
         margin: rem(.5);
-        background-position: center center;
-        background-repeat: no-repeat;
-        @include background-size(60%);
         &#abc{
           background-image: url("../assets/logo_full_abc_white.png");
           @extend .backgroundimage;
-          @include background-size(52%);
+          -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
+          behavior: url('/js/polyfills/backgroundsize.min.htc');
           &:hover{
             background-image: url("../assets/logo_full_abc_blue.png");
           }
@@ -77,6 +75,8 @@
         &#marketwatch{
           background-image: url("../assets/logo_full_marketwatch_white.png");
           @extend .backgroundimage;
+          -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
+          behavior: url('/js/polyfills/backgroundsize.min.htc');
           &:hover{
             background-image: url("../assets/logo_full_marketwatch_blue.png");
           }
@@ -85,6 +85,8 @@
         &#wired{
           background-image: url("../assets/logo_full_wired_white.png");
           @extend .backgroundimage;
+          -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
+          behavior: url('/js/polyfills/backgroundsize.min.htc');
           &:hover{
             background-image: url("../assets/logo_full_wired_blue.png");
           }

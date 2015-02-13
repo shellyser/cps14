@@ -5,14 +5,6 @@ $modern: false;
 
 @import "main";
 
-.backgroundimage{
-  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
-}
-
-[class^="circle"] {
-  -ms-behavior: url('../js/polyfills/PIE.htc');
-}
-
 #intro{
   #intro-content-bg {
       background-color: $white;
@@ -133,7 +125,9 @@ $modern: false;
         width: 22.5em;
         height: 22.5em;
         background-image: url("../assets/hose_circle.png");
-        @extend .backgroundimage; 
+        @include background-size(cover);
+        background-repeat: no-repeat;
+        background-position: center center; 
         position: absolute;
         right: 0;
         margin: auto;
@@ -164,12 +158,20 @@ $modern: false;
       .circle-outter{
         background-color: transparent;
         background-image: url("../assets/map_outter_circle.png");
-        @extend .backgroundimage; 
+        @include background-size(cover);
+        -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
+        behavior: url('/js/polyfills/backgroundsize.min.htc');
+        background-repeat: no-repeat;
+        background-position: center center; 
       }
       .circle-inner{
         background-color: transparent;
         background-image: url("../assets/map_inner_circle.png");
-        @extend .backgroundimage;
+        @include background-size(cover);
+        -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
+        behavior: url('/js/polyfills/backgroundsize.min.htc');
+        background-repeat: no-repeat;
+        background-position: center center;
       }
     }
   }
@@ -199,11 +201,12 @@ $modern: false;
       margin: auto;
       [id^="circle-"] {
         background-image: url("../assets/stats_circle.png");
-        @extend .backgroundimage;
+        @include background-size(cover);
+        -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
+        behavior: url('/js/polyfills/backgroundsize.min.htc');
+        background-repeat: no-repeat;
+        background-position: center center;
         display: inline-block;
-        @include border-radius(50%);
-        background-color: $dark_blue;
-        @include opacity(0.6);
         float:left;
         > div{
           width: 85%;
