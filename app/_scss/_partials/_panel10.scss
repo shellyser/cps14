@@ -58,8 +58,8 @@
             display: inline-block;
             width: rem(3.3);
             height: rem(3.3);
-            background-color: $white;
-            @include border-radius(50%);
+            background-image: url("../assets/socialmedia_circle.png");
+            @extend .backgroundimage;
             margin: rem(.3);
             position: relative;
             @include break-min($panel2-line-break){
@@ -68,7 +68,7 @@
               margin: rem(.6);
             } 
             &:hover {
-              background-color: $outro_blue;
+              background-image: url("../assets/socialmedia_circle_hover.png");
             }
             &:focus {
               outline: none;
@@ -164,7 +164,7 @@
         margin-left: 20px;
       }
       #cpslogo{
-          width: 7.5rem;
+          width: rem(7.5);
           padding-top: 6px;
       }
       @include break-min($panel2-line-break){

@@ -60,37 +60,33 @@
       @include transition(transform 0.5s ease-in);
       .circle {
         display: inline-block;
-        background-color: $white_90;
-        @include border-radius(50%);
         width: rem(7);
         height: rem(7);
         margin: rem(.5);
         background-position: center center;
         background-repeat: no-repeat;
         @include background-size(60%);
-        &:hover{
-          background-color: $color_blue;
-        }
         &#abc{
-          background-image: url("../assets/logo_abcnews.png");
-          background-position: 50% 51%;
+          background-image: url("../assets/logo_full_abc_white.png");
+          @extend .backgroundimage;
           @include background-size(52%);
           &:hover{
-            background-image: url("../assets/logo_abcnews_white.png");
+            background-image: url("../assets/logo_full_abc_blue.png");
           }
         }
         &#marketwatch{
-          background-image: url("../assets/logo_marketwatch.svg");
-          @include background-size(75%);
+          background-image: url("../assets/logo_full_marketwatch_white.png");
+          @extend .backgroundimage;
           &:hover{
-            background-image: url("../assets/logo_marketwatch_white.svg");
+            background-image: url("../assets/logo_full_marketwatch_blue.png");
           }
         }
 
         &#wired{
-          background-image: url("../assets/logo_wired.svg");
+          background-image: url("../assets/logo_full_wired_white.png");
+          @extend .backgroundimage;
           &:hover{
-            background-image: url("../assets/logo_wired_white.svg");
+            background-image: url("../assets/logo_full_wired_blue.png");
           }
         }
       }

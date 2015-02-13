@@ -6,16 +6,16 @@ $modern: false;
 @import "main";
 
 .backgroundimage{
-  -ms-behavior: url(/JS/polyfills/backgroundsize.min.htc);
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
 }
 
 [class^="circle"] {
-  -ms-behavior: url(/js/polyfills/PIE.htc);
+  -ms-behavior: url("../js/polyfills/PIE.htc");
 }
 
 #intro{
   #intro-content-bg {
-      background-color: rgb(255,255,255);
+      background-color: $white;
       @include opacity(.5);
    }
   #intro-content{
@@ -61,7 +61,10 @@ $modern: false;
     }
    }
    footer{
-    height: 50px;
+    height: 60px;
+    #footer-content{
+      height: 3em;
+    }
    }
 }
 
@@ -129,9 +132,8 @@ $modern: false;
       .circle{
         width: 22.5em;
         height: 22.5em;
-        @include opacity(.6);
-        background-color: $white;
-        @include border-radius(50%);
+        background-image: url("../assets/hose_circle.png");
+        @extend .backgroundimage; 
         position: absolute;
         right: 0;
         margin: auto;
@@ -160,14 +162,14 @@ $modern: false;
   #map-wrapper{
     [class^="layer-"] {
       .circle-outter{
-        @include border-radius(50%);
-        background-color: $white;
-        @include opacity(0.3);
+        background-color: transparent;
+        background-image: url("../assets/map_outter_circle.png");
+        @extend .backgroundimage; 
       }
       .circle-inner{
-        @include border-radius(50%);
-        background-color:$white;
-        @include opacity(0.6);
+        background-color: transparent;
+        background-image: url("../assets/map_inner_circle.png");
+        @extend .backgroundimage;
       }
     }
   }
@@ -187,10 +189,15 @@ $modern: false;
     }
   }
 }
+
 #taxi{
   #circle-wrapper{
     #circles{
+      width: 38em;
+      margin: auto;
       [id^="circle-"] {
+        background-image: url("../assets/stats_circle.png");
+        @extend .backgroundimage;
         display: inline-block;
         float:left;
         > div{
@@ -209,31 +216,7 @@ $modern: false;
   }
   #fence-content{
     .circles{
-      .circle{
-        @include border-radius(50%);
-        background-color: $white;
-        @include opacity(0.9);
-        display: inline-block;
-        float: left;
-        &#abc{
-          background-image: url("../assets/logo_abc.png");
-          &:hover{
-            background-image: url("../assets/logo_abc_white.png");
-          }
-        }
-        &#marketwatch{
-          background-image: url("../assets/logo_marketwatch.png");
-          &:hover{
-            background-image: url("../assets/logo_marketwatch_white.png");
-          }
-        }
-        &#wired{
-          background-image: url("../assets/logo_wired.png");
-          &:hover{
-            background-image: url("../assets/logo_wired_white.png");
-          }
-        }
-      }
+      width: 40em;
     }
   }
 }
@@ -255,3 +238,10 @@ $modern: false;
   }
 }
 
+#outro{
+  #closing{
+    .wrapper{
+      width: 800px;
+    }
+  }
+}
