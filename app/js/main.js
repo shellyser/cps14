@@ -52,7 +52,7 @@ $(document).ready(function () {
 			console.log(data.curTop); 
 	     	if(data.curTop >= 39100){
 	    	    	$('#circles #circle-1 h1 span').prop('Counter',0).animate({
-	    	        Counter: 97
+	    	        Counter: 33
 	    	    	}, {
 	    	        duration: 2000,
 	    	        easing: 'swing',
@@ -63,18 +63,18 @@ $(document).ready(function () {
 	    	}
 	    	if(data.curTop >= 40100){
 	    		$('#circles #circle-2 h1 span').prop('Counter',0).animate({
-	    	          Counter: 30
+	    	          Counter: 2.6
 	    	      		}, {
 	    	          duration: 2000,
 	    	          easing: 'swing',
-	    	          step: function (now) {
-	    	              $(this).text(Math.ceil(now));
+	    	          progress: function(now) {
+	    	            $(this).text(Math.ceil(this.Counter*10)/10);
 	    	          }
 	       	 });			       	 
 	    }
     		if(data.curTop >= 41010){
     			$('#circles #circle-3 h1 span').prop('Counter',0).animate({
-		           Counter: 34317
+		           Counter: 12
 		      	 	}, {
 		           duration: 2000,
 		           easing: 'swing',
@@ -163,6 +163,7 @@ $(document).ready(function () {
 	$('#fence-content').css({'height': winH - 100 + 'px'});	
 	////ie replacement for calc in intro section
 	$('#ie #fence-content').css({'height': winH - 112 + 'px'});	
+	$('#ie9 #fence-content').css({'height': winH - 112 + 'px'});	
 								
 	// size triangles
 	$('.triangle-1').css({'border-top': winH + 'px solid rgba(0, 0, 0, 1)'});
@@ -221,5 +222,6 @@ $(window).resize(function () {
 	$('#fence-content').css({'height': winHR - 126 + 'px'});	
 	////ie replacement for calc in intro section
 	$('#ie #fence-content').css({'height': winHR - 112 + 'px'});		
+	$('#ie9 #fence-content').css({'height': winHR - 112 + 'px'});
 });
 

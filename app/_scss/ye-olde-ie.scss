@@ -6,11 +6,11 @@ $modern: false;
 @import "main";
 
 .backgroundimage{
-  -ms-behavior: url(/JS/polyfills/backgroundsize.min.htc);
+  -ms-behavior: url('../js/polyfills/backgroundsize.min.htc');
 }
 
 [class^="circle"] {
-  -ms-behavior: url(/js/polyfills/PIE.htc);
+  -ms-behavior: url('../js/polyfills/PIE.htc');
 }
 
 #intro{
@@ -172,9 +172,9 @@ $modern: false;
     }
   }
   #map-header{
-    font-size: 5em;
+    height: 3.5em
     h1{
-      font-size: 14em;
+      font-size: 1em;
       position: absolute;
       width: 100%;
       height: 1em;
@@ -189,9 +189,14 @@ $modern: false;
 }
 #taxi{
   #circle-wrapper{
+    width: 70%;
+    margin: auto;
     #circles{
       [id^="circle-"] {
         display: inline-block;
+        @include border-radius(50%);
+        background-color: $dark_blue;
+        @include opacity(0.6);
         float:left;
         > div{
           width: 85%;
@@ -210,15 +215,16 @@ $modern: false;
   #fence-content{
     .circles{
       .circle{
+
         @include border-radius(50%);
         background-color: $white;
         @include opacity(0.9);
         display: inline-block;
         float: left;
         &#abc{
-          background-image: url("../assets/logo_abc.png");
+          background-image: url("../assets/logo_abcnews.png");
           &:hover{
-            background-image: url("../assets/logo_abc_white.png");
+            background-image: url("../assets/logo_abcnews_white.png");
           }
         }
         &#marketwatch{
