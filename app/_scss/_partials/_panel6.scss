@@ -166,8 +166,8 @@
     top: 17em;
     right: 23em;
     @include break-max($main-break){
-      top: 14em;
-      left: 27em;
+      top: 11em;
+      left: 18em;
     }
     .line {
       right: -16.5em;
@@ -176,7 +176,11 @@
     p{
       left: 3em;
       top: 1.8em;
-
+      @include break-max($main-break){
+        left: 3.8em;
+        top: 2.3em;
+        width: 13em;
+      }
       @include break-min($main-break-lg){
         left: 4.3em;
         top: 2.5em;
@@ -194,6 +198,10 @@
   .layer-3{
     top: 34em;
     left: 17em;
+    @include break-max($main-break){
+      left: 12em;
+      top: 27em;
+    }
     .line {
       top: 3em;
       left: -10.8em;
@@ -204,7 +212,7 @@
       width: 13em;
       text-align: right;
       @include break-max($main-break){
-        left: 3.5em;
+        left: -13em;
         top: 2.2em;
       }
       @include break-min($main-break-lg){
@@ -228,7 +236,7 @@
     width: 19em;
     @include break-max($main-break){
       top: 3em;
-      left: 24em;
+      left: 13em;
     }
     .line {
       top: 3em;
@@ -238,8 +246,8 @@
       top: 2.2em;
       left: 3em;
       @include break-max($main-break){
-        top: 2.8em;
-        left: -12em;
+        top: 2.5em;
+        left: 3.6em;
       }
       @include break-min($main-break-lg){
         top: 2.8em;
@@ -260,6 +268,10 @@
   .layer-5{
     bottom: 16em;
     right: 24em;
+    @include break-max($main-break){
+      bottom: 14em;
+      right: 19em;
+    }
     .line{
       top: 3em;
       left: 5.4em;
@@ -283,6 +295,9 @@
   .layer-6 {
     top: 4em;
     right: 46em;
+    @include break-max($main-break){
+        right: 36em;
+      }
     .circle-outter {
       width: 12.5em;
       height: 12.5em;   
@@ -313,8 +328,8 @@
       }
       @include break-max($main-break){
         width: 11em;
-        left: 6.1em;
-        top: 4em;
+        left: 8.5em;
+        top: 4.4em;
       }
 
       @include break-min($main-break-lg){

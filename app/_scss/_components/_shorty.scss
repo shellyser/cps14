@@ -6,6 +6,10 @@
         margin-top: 4px;
         width: 125px;
         height: 33px;
+        @include break-max($main-break){
+          width: 146px;
+          margin-top: 14px;
+        }
       }
       h2{
         margin-top: 0px;
@@ -49,7 +53,8 @@
       h1{
         line-height: rem(1.8);
         em{
-          font-size: rem(1.1);     
+          font-size: rem(1.1);
+          line-height: rem(1);     
           font-weight: 400;
         }
       }
@@ -83,11 +88,15 @@
     }
     #closing{
       height: 56px;
-      padding-top: 0.7rem;
+      padding-top: rem(0.7);
       p{
-        font-size: .9rem;
-        padding-bottom: .6rem;
-        line-height: 0rem;
+        font-size: rem(.9);
+        padding-bottom: rem(.6);
+        line-height: rem(0);
+        @include break-max($main-break){
+          font-size: rem(.85);
+          line-height: rem(1);
+        }
       }
       #logos {
         img {

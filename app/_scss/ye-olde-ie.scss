@@ -6,11 +6,11 @@ $modern: false;
 @import "main";
 
 .backgroundimage{
-  -ms-behavior: url('../js/polyfills/backgroundsize.min.htc');
+  -ms-behavior: url('js/polyfills/backgroundsize.min.htc');
 }
 
 [class^="circle"] {
-  -ms-behavior: url('../js/polyfills/PIE.htc');
+  -ms-behavior: url('js/polyfills/PIE.htc');
 }
 
 #intro{

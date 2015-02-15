@@ -58,6 +58,9 @@
         left: 5%;
         width: 67%;
         z-index: 1;
+        @include break-max($panel3-text-break){
+          top: 19.5em;
+        }
         @include break-between($panel4-text-break6, $panel4-text-break5){
           left: 8%;
           width: 61%;
@@ -93,10 +96,11 @@
         left: 61%;
         margin-right: -50%;
         @include transform(translate(-50%, -50%));
-          @include break-max($main-break){
-            max-width: 16em;
-            font-size: 2em;
+          @include break-max($panel3-text-break){
+            max-width: 12em;
+            font-size: .65em;
             left: 52%;
+            top: 53%;
             }
           @include break-min($panel2-line-break){
             top: 48%;
@@ -114,7 +118,6 @@
         right: 0;
         position: absolute;
         .circle {
-
           width: 11em;
           height: 11em;
           @include border-radius(50%);
@@ -126,9 +129,9 @@
           top:0;
           bottom:0;
           padding: 5%;
-          @include break-max($main-break) {
-            width: 18.5em;
-            height: 18.5em;
+          @include break-max($panel3-text-break) {
+            width: 7em;
+            height: 7em;
           }
           @include break-min($panel4-text-break){
             width: 13em;
@@ -149,6 +152,9 @@
             top: 0;
             bottom: 0;
             height: 1em;
+            @include break-max($panel3-text-break){
+              font-size: 3em;
+            }
             @include break-min($panel4-text-break){
               font-size: 6.2em;
             }
