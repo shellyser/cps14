@@ -7,7 +7,7 @@
       -webkit-border-radius: $value;
       -moz-border-radius: $value;
       border-radius: $value;
-      behavior: url('../js/polyfills/PIE.htc');
+      behavior: url('/js/polyfills/PIE.htc');
 }
 
 @mixin background-size($value){
@@ -15,6 +15,7 @@
        -moz-background-size: $value;
       -o-background-size: $value;
        background-size:   $value;
-       -ms-behavior: url('../js/polyfills/backgroundsize.min.htc');
+      -ms-behavior: url('/js/polyfills/backgroundsize.min.htc');
+      behavior: url('/js/polyfills/backgroundsize.min.htc');
 }
  

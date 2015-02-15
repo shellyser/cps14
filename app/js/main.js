@@ -179,7 +179,8 @@ $(document).ready(function () {
 	//size background-box in slide 8
 	// $('#fence-content').css({"width": winW - (winW * 0.2) + 'px'});
 	// $('#fence-content').css({"height": winH - (winH * 0.2) + 'px'});
-		
+	
+			
 
 });
 $(window).resize(function () {

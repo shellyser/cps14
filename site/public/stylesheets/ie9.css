@@ -1,0 +1,3378 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/\.rvm\/gems\/ruby-2\.1\.5\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* These mixins handle IE < 9, which doesn't respond to media queries.
+  To "activate" them in ye-olde-ie stylesheet, set $dim to NUMpx and
+  set $ye-olde-ie to a version number and then import the main stylesheet. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\000031}}
+#intro {
+  -skrollr-animation-name: introanim1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\000035}}
+#intro-year {
+  -skrollr-animation-name: introyearanim1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\000038}}
+#intro-text {
+  -skrollr-animation-name: introtextanim1;
+}
+
+@-skrollr-keyframes introanim1 {
+  _bstreetupper--500 {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+  }
+  _bstreetupper {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+}
+@-skrollr-keyframes introyearanim1 {
+  skrollr-0 {
+    opacity: 0;
+  }
+  _bstreetupper--1900 {
+    opacity: 0;
+  }
+  _bstreetupper--1600 {
+    opacity: 1;
+  }
+}
+@-skrollr-keyframes introtextanim1 {
+  skrollr-0 {
+    opacity: 0;
+  }
+  _bstreetupper--1600 {
+    opacity: 0;
+  }
+  _bstreetupper--1300 {
+    opacity: 1;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\0000347}}
+#street-upper {
+  -skrollr-animation-name: streetupperanim1;
+}
+
+@-skrollr-keyframes streetupperanim1 {
+  skrollr-0 {
+    display: block;
+  }
+  _bstreetupper--500 {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+  }
+  _bstreetupper {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+  }
+  _astreetupper {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _bskyline {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\0000372}}
+#skyline {
+  -skrollr-animation-name: skylineanim1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\0000375}}
+#one {
+  -skrollr-animation-name: skylineanim2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\0000378}}
+#two {
+  -skrollr-animation-name: skylineanim3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\0000381}}
+#three {
+  -skrollr-animation-name: skylineanim4;
+}
+
+@-skrollr-keyframes skylineanim1 {
+  skrollr-0 {
+    display: none;
+  }
+  _astreetupper {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+  }
+  _bskyline {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _askyline {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _bbrick {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    display: none;
+  }
+}
+@-skrollr-keyframes skylineanim2 {
+  _bskyline-800 {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+  }
+  _bskyline-1400 {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+}
+@-skrollr-keyframes skylineanim3 {
+  _bskyline-1800 {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+  _bskyline-2400 {
+    -webkit-transform: translate(0%, -100%);
+    transform: translate(0%, -100%);
+  }
+  _bskyline-3100 {
+    -webkit-transform: translate(0%, -100%);
+    transform: translate(0%, -100%);
+  }
+  _bskyline-3600 {
+    -webkit-transform: translate(0%, -200%);
+    transform: translate(0%, -200%);
+  }
+}
+@-skrollr-keyframes skylineanim4 {
+  _bskyline-3600 {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+  _bskyline-4500 {
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003141}}
+#brick {
+  -skrollr-animation-name: brickanim1;
+}
+
+@-skrollr-keyframes brickanim1 {
+  skrollr-0 {
+    display: none;
+  }
+  _askyline {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+  }
+  _bbrick {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+  }
+  _abrick {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _bnycave {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003165}}
+#nycave {
+  -skrollr-animation-name: nycaveanim1;
+}
+
+@-skrollr-keyframes nycaveanim1 {
+  _abrick {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+  }
+  _bnycave {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    background-position: 50% 0%;
+  }
+  _bnycave-1200 {
+    background-position: 50% 100%;
+  }
+  _anycave {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+  }
+  _bstreetlower {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003188}}
+#street-lower {
+  -skrollr-animation-name: streetloweranim1;
+}
+
+@-skrollr-keyframes streetloweranim1 {
+  skrollr-0 {
+    display: none;
+  }
+  _anycave {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+  }
+  _bstreetlower {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+  }
+  _astreetlower {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _bfence {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003213}}
+#taxi {
+  -skrollr-animation-name: taxianim1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003216}}
+#circle-1 {
+  -skrollr-animation-name: circle1anim2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003219}}
+#circle-2 {
+  -skrollr-animation-name: circle2anim3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003222}}
+#circle-3 {
+  -skrollr-animation-name: circle3anim4;
+}
+
+@-skrollr-keyframes taxianim1 {
+  skrollr-0 {
+    display: none;
+  }
+  _abridge {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+  }
+  _btaxi {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _ataxi {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _boutro {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    display: none;
+  }
+}
+@-skrollr-keyframes circle1anim2 {
+  _btaxi-600 {
+    -webkit-transform: translate(0, -75%);
+    transform: translate(0, -75%);
+    opacity: 0;
+  }
+  _btaxi-1100 {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    opacity: 1;
+  }
+}
+@-skrollr-keyframes circle2anim3 {
+  _btaxi-1600 {
+    -webkit-transform: translate(0, -75%);
+    transform: translate(0, -75%);
+    opacity: 0;
+  }
+  _btaxi-2100 {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    opacity: 1;
+  }
+}
+@-skrollr-keyframes circle3anim4 {
+  _btaxi-2500 {
+    -webkit-transform: translate(0, -75%);
+    transform: translate(0, -75%);
+    opacity: 0;
+  }
+  _btaxi-3000 {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    opacity: 1;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003279}}
+#fence {
+  -skrollr-animation-name: fenceanim1;
+}
+
+@-skrollr-keyframes fenceanim1 {
+  skrollr-0 {
+    display: none;
+  }
+  _astreetlower {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+  }
+  _bfence {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+  }
+  _afence {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _bbridge {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003304}}
+#bridge {
+  -skrollr-animation-name: bridgeanim1;
+}
+
+@-skrollr-keyframes bridgeanim1 {
+  skrollr-0 {
+    display: none;
+  }
+  _afence {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+  }
+  _bbridge {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+  }
+  _abridge {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+  _btaxi {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003329}}
+#outro {
+  -skrollr-animation-name: outroanim1;
+}
+
+@-skrollr-keyframes outroanim1 {
+  skrollr-0 {
+    display: none;
+  }
+  _ataxi {
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+  }
+  _boutro {
+    -webkit-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    display: block;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003348}}
+#ie #intro {
+  -skrollr-animation-name: introanim1ie;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003351}}
+#ie #intro-year {
+  -skrollr-animation-name: introyear1ie;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003354}}
+#ie #intro-text {
+  -skrollr-animation-name: introtext1ie;
+}
+@-skrollr-keyframes introyearanim1ie {
+  skrollr-0 {
+    display: none;
+  }
+  _bstreetupper--1900 {
+    display: none;
+  }
+  _bstreetupper--1600 {
+    display: block;
+  }
+}
+@-skrollr-keyframes introtextanim1ie {
+  skrollr-0 {
+    display: none;
+  }
+  _bstreetupper--1600 {
+    display: block;
+  }
+  _bstreetupper--1300 {
+    display: block;
+  }
+}
+@-skrollr-keyframes introanim1ie {
+  _bstreetupper--500 {
+    top: 0%;
+  }
+  _bstreetupper {
+    top: -100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003390}}
+#ie #street-upper {
+  -skrollr-animation-name: streetupperanim1ie;
+}
+@-skrollr-keyframes streetupperanim1ie {
+  _bstreetupper--500 {
+    top: 100%;
+  }
+  _bstreetupper {
+    top: 0%;
+  }
+  _astreetupper {
+    top: 0%;
+  }
+  _bskyline {
+    top: -100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003409}}
+#ie #skyline {
+  -skrollr-animation-name: skylineanim1ie;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003412}}
+#ie #one {
+  -skrollr-animation-name: skylineanim2ie;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003415}}
+#ie #two {
+  -skrollr-animation-name: skylineanim3ie;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003418}}
+#ie #three {
+  -skrollr-animation-name: skylineanim4ie;
+}
+@-skrollr-keyframes skylineanim1ie {
+  _astreetupper {
+    top: 100%;
+  }
+  _bskyline {
+    top: 0%;
+  }
+  _askyline {
+    top: 0%;
+  }
+  _bbrick {
+    top: -100%;
+  }
+}
+@-skrollr-keyframes skylineanim2ie {
+  _bskyline-800 {
+    top: 0%;
+    display: block;
+  }
+  _bskyline-1400 {
+    top: -100%;
+    display: none;
+  }
+}
+@-skrollr-keyframes skylineanim3ie {
+  skrollr-0 {
+    display: none;
+  }
+  _bskyline-1800 {
+    top: 0%;
+    display: block;
+  }
+  _bskyline-2400 {
+    top: -100%;
+  }
+  _bskyline-3100 {
+    top: -100%;
+    display: block;
+  }
+  _bskyline-3600 {
+    top: -200%;
+    display: none;
+  }
+}
+@-skrollr-keyframes skylineanim4ie {
+  skrollr-0 {
+    display: none;
+  }
+  _bskyline-3600 {
+    top: -100%;
+    display: block;
+  }
+  _bskyline-4500 {
+    top: -200%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003482}}
+#ie #brick {
+  -skrollr-animation-name: brickanim1ie;
+}
+@-skrollr-keyframes brickanim1ie {
+  skrollr-0 {
+    display: none;
+  }
+  _askyline {
+    top: 100%;
+    display: block;
+  }
+  _bbrick {
+    top: 0%;
+  }
+  _abrick {
+    top: 0%;
+    display: block;
+  }
+  _bnycave {
+    top: -100%;
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003506}}
+#ie #nycave {
+  -skrollr-animation-name: nycaveanim1ie;
+}
+@-skrollr-keyframes nycaveanim1ie {
+  _abrick {
+    top: 100%;
+  }
+  _bnycave {
+    top: 0%;
+    background-position: 50% 0%;
+  }
+  _bnycave-1200 {
+    background-position: 50% 100%;
+  }
+  _anycave {
+    top: 0%;
+  }
+  _bstreetlower {
+    top: -100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003529}}
+#ie #street-lower {
+  -skrollr-animation-name: streetloweranim1ie;
+}
+@-skrollr-keyframes streetloweranim1ie {
+  skrollr-0 {
+    display: none;
+  }
+  _anycave {
+    top: 100%;
+    display: block;
+  }
+  _bstreetlower {
+    top: 0%;
+  }
+  _astreetlower {
+    top: 0%;
+    display: block;
+  }
+  _bfence {
+    top: -100%;
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003554}}
+#ie #taxi {
+  -skrollr-animation-name: taxianim1ie;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003557}}
+#ie #circle-1 {
+  -skrollr-animation-name: circle1anim2ie;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003560}}
+#ie #circle-2 {
+  -skrollr-animation-name: circle2anim3ie;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003563}}
+#ie #circle-3 {
+  -skrollr-animation-name: circle3anim4ie;
+}
+@-skrollr-keyframes taxianim1ie {
+  skrollr-0 {
+    display: none;
+  }
+  _abridge {
+    top: 100%;
+    display: block;
+  }
+  _btaxi {
+    top: 0%;
+  }
+  _ataxi {
+    top: 0%;
+    display: block;
+  }
+  _boutro {
+    top: -100%;
+    display: none;
+  }
+}
+@-skrollr-keyframes circle1anim2ie {
+  _btaxi-600 {
+    visibility: hidden;
+  }
+  _btaxi-1100 {
+    visibility: visible;
+  }
+}
+@-skrollr-keyframes circle2anim3ie {
+  _btaxi-1600 {
+    visibility: hidden;
+  }
+  _btaxi-2100 {
+    visibility: visible;
+  }
+}
+@-skrollr-keyframes circle3anim4ie {
+  _btaxi-2500 {
+    visibility: hidden;
+  }
+  _btaxi-3000 {
+    visibility: visible;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003613}}
+#ie #fence {
+  -skrollr-animation-name: fenceanim1ie;
+}
+@-skrollr-keyframes fenceanim1ie {
+  skrollr-0 {
+    display: none;
+  }
+  _astreetlower {
+    top: 100%;
+    display: block;
+  }
+  _bfence {
+    top: 0%;
+  }
+  _afence {
+    top: 0%;
+    display: block;
+  }
+  _bbridge {
+    top: -100%;
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003637}}
+#ie #bridge {
+  -skrollr-animation-name: bridgeanim1ie;
+}
+@-skrollr-keyframes bridgeanim1ie {
+  skrollr-0 {
+    display: none;
+  }
+  _afence {
+    top: 100%;
+    display: block;
+  }
+  _bbridge {
+    top: 0%;
+  }
+  _abridge {
+    top: 0%;
+    display: block;
+  }
+  _btaxi {
+    top: -100%;
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003662}}
+#ie #outro {
+  -skrollr-animation-name: outroanim1ie;
+}
+@-skrollr-keyframes outroanim1ie {
+  skrollr-0 {
+    display: none;
+  }
+  _ataxi {
+    top: 100%;
+    display: block;
+  }
+  _boutro {
+    top: 0%;
+    display: block;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_skrollr\.scss}line{font-family:\00003684}}
+#ie9 #brick #brick-content img {
+  -skrollr-animation-name: brickanim1ie9;
+}
+@-skrollr-keyframes brickanim1ie9 {
+  skrollr-0 {
+    display: none;
+  }
+  _askyline {
+    display: none;
+  }
+  _bnycave {
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\000033}}
+.shorty #intro header {
+  height: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\000035}}
+.shorty #intro header img {
+  margin-top: 4px;
+  width: 125px;
+  height: 33px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000310}}
+.shorty #intro header h2 {
+  margin-top: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000314}}
+.shorty #intro #intro-content {
+  height: -webkit-calc(100% - 60px - 46px);
+  height: calc(100% - 60px - 46px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000317}}
+.shorty #intro footer {
+  height: 46px;
+  padding: 0.3rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000320}}
+.shorty #intro footer #footer-content {
+  height: 3.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000323}}
+.shorty #intro footer img {
+  width: 33px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000326}}
+.shorty #intro footer h3 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000333}}
+  .shorty #street-lower #map-wrapper {
+    font-size: 13px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000341}}
+.shorty #brick #brick-content > div:first-of-type h1 {
+  top: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000347}}
+.shorty #fence #fence-header {
+  height: 9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000349}}
+.shorty #fence #fence-header h1 {
+  line-height: 1.8rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000351}}
+.shorty #fence #fence-header h1 em {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000347}}
+  .shorty #fence #fence-header {
+    height: 10rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000358}}
+  .shorty #fence #fence-header h1 {
+    padding-top: 2rem;
+    line-height: 2.1rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000365}}
+.shorty #fence #fence-content {
+  height: -webkit-calc(100% - rem(10));
+  height: calc(100% - rem(10));
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000368}}
+  .shorty #fence #fence-content .circles {
+    width: 40rem;
+    height: 20rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000371}}
+  .shorty #fence #fence-content .circles .circle {
+    width: 11rem;
+    height: 11rem;
+    margin: 0.3rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000381}}
+.shorty #outro wrapper:first-of-type {
+  height: -webkit-calc(100% - 53px);
+  height: calc(100% - 53px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000384}}
+.shorty #outro #closing {
+  height: 56px;
+  padding-top: 0.7rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000387}}
+.shorty #outro #closing p {
+  font-size: .9rem;
+  padding-bottom: .6rem;
+  line-height: 0rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000393}}
+.shorty #outro #closing #logos img {
+  width: 90px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_components\/_shorty\.scss}line{font-family:\0000396}}
+.shorty #outro #closing #logos #thinkeco-logo {
+  margin-left: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\000033}}
+#intro #intro-content-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000311}}
+#intro #intro-sky-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  background-image: url("../assets/bgphotos/sky600.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000311}}
+  #intro #intro-sky-bg {
+    background-image: url("../assets/bgphotos/sky600@2x.jpg");
+  }
+}
+@media (min--moz-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000311}}
+  #intro #intro-sky-bg {
+    background-image: url("../assets/bgphotos/sky600@2x.jpg");
+  }
+}
+@media (-o-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000311}}
+  #intro #intro-sky-bg {
+    background-image: url("../assets/bgphotos/sky600@2x.jpg");
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000311}}
+  #intro #intro-sky-bg {
+    background-image: url("../assets/bgphotos/sky.jpg");
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000326}}
+header {
+  height: 86px;
+  background-color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000329}}
+header img {
+  margin-top: 23.5px;
+  width: 400px;
+  height: 39px;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000337}}
+#intro-content {
+  width: 26rem;
+  position: relative;
+  margin: auto;
+  height: -webkit-calc(100% - 11% - 86px);
+  height: calc(100% - 11% - 86px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000342}}
+#intro-content .box {
+  min-height: 38%;
+  width: 3rem;
+  position: absolute;
+  border-left: #b5c178 0.3rem solid;
+  border-bottom: #b5c178 0.4rem solid;
+  left: 3.4rem;
+  top: 33%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000351}}
+#intro-content .asterick {
+  width: 1.6rem;
+  left: -1rem;
+  top: -1rem;
+  position: absolute;
+  background-image: url("/assets/asterick_black.png");
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000337}}
+  #intro-content {
+    width: 35rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000361}}
+  #intro-content .box {
+    min-height: 38%;
+    width: 6rem;
+    left: 4rem;
+  }
+}
+@media screen and (min-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000337}}
+  #intro-content {
+    width: 53rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000369}}
+  #intro-content .box {
+    min-height: 53%;
+    width: 14rem;
+    top: 35%;
+    left: 3.5rem;
+  }
+}
+@media screen and (min-width: 950px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000337}}
+  #intro-content {
+    width: 57rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000378}}
+  #intro-content .box {
+    left: 1.5rem;
+    min-height: 54%;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000337}}
+  #intro-content {
+    width: 65rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000385}}
+  #intro-content .box {
+    top: 37%;
+    left: 1.5rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000390}}
+#intro-content #intro-content-top {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  color: #004184;
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000396}}
+#intro-content #intro-content-top #intro-title {
+  display: none;
+  padding: 2%;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.7rem;
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000396}}
+  #intro-content #intro-content-top #intro-title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 950px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000396}}
+  #intro-content #intro-content-top #intro-title {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\0000396}}
+  #intro-content #intro-content-top #intro-title {
+    font-size: 4.1rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003120}}
+#intro-content-bottom {
+  display: block;
+  position: relative;
+  height: 50%;
+  padding: 2%;
+  top: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003126}}
+#intro-content-bottom #intro-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003133}}
+#intro-content-bottom #intro-section #intro-year {
+  display: block;
+  font-size: 5.6rem;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.15) 2px 1px 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003139}}
+#intro-content-bottom #intro-section #intro-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: block;
+  margin: 5px auto;
+  width: 26rem;
+  text-shadow: rgba(0, 0, 0, 0.6) 2px 0px 2px;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003148}}
+  #intro-content-bottom #intro-section #intro-year {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003126}}
+  #intro-content-bottom #intro-section {
+    min-width: 100%;
+    margin: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003155}}
+  #intro-content-bottom #intro-section #intro-year {
+    font-size: 7rem;
+    font-weight: 700;
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003160}}
+  #intro-content-bottom #intro-section #intro-text {
+    font-size: 0.9rem;
+    line-height: 1.75rem;
+    width: 29rem;
+    text-align: left;
+    margin-left: 2%;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 950px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003126}}
+  #intro-content-bottom #intro-section {
+    min-width: 100%;
+    margin: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003172}}
+  #intro-content-bottom #intro-section #intro-year {
+    font-size: 8.3rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003178}}
+  #intro-content-bottom #intro-section #intro-text {
+    font-size: 1rem;
+    line-height: em(1.8);
+    text-align: left;
+    margin-left: 1.2rem;
+    display: inline-block;
+    width: 32rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003126}}
+  #intro-content-bottom #intro-section {
+    min-width: 100%;
+    margin: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003190}}
+  #intro-content-bottom #intro-section #intro-year {
+    font-size: 9rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 3rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003196}}
+  #intro-content-bottom #intro-section #intro-text {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: left;
+    margin-left: 2.3rem;
+    display: inline-block;
+    width: 35rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003209}}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  color: #0E9DD8;
+  font-style: italic;
+  height: 11%;
+  font-size: .8em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003219}}
+footer #footer-content {
+  height: 5em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003219}}
+  footer #footer-content {
+    height: 4em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003230}}
+footer #footer-content h3 {
+  display: block;
+  margin-top: 0.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003234}}
+footer #footer-content #intro-scroll {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel1\.scss}line{font-family:\00003237}}
+footer #footer-content #intro-scroll:hover {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\000031}}
+#street-upper {
+  background-image: url("../assets/bgphotos/canal450.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\000031}}
+  #street-upper {
+    background-image: url("../assets/bgphotos/canal450@2x.jpg");
+  }
+}
+@media (min--moz-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\000031}}
+  #street-upper {
+    background-image: url("../assets/bgphotos/canal450@2x.jpg");
+  }
+}
+@media (-o-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\000031}}
+  #street-upper {
+    background-image: url("../assets/bgphotos/canal450@2x.jpg");
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\000031}}
+  #street-upper {
+    background-image: url("../assets/bgphotos/canal1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\000031}}
+  #street-upper {
+    background-image: url("../assets/bgphotos/canal.jpg");
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000313}}
+#street-upper .bottom {
+  background-color: #fff;
+  min-height: 0.3rem;
+  top: 38rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000320}}
+#street-content {
+  position: relative;
+  text-align: center;
+  height: 25rem;
+  background-color: #000;
+  top: 5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000326}}
+#street-content .bottom {
+  background-color: #fff;
+  min-height: 0.6rem;
+  top: 25rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000332}}
+#street-content .top {
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000334}}
+#street-content .top.left {
+  top: 12%;
+  min-height: 0.3rem;
+  background-color: #fff;
+  width: 100rem;
+  background-color: #fff;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-111%, 50%);
+  transform: translate(-111%, 50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000343}}
+#street-content .top.left.orange {
+  background-color: #dc6900;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000347}}
+#street-content .top.right {
+  top: 12%;
+  min-height: 0.3rem;
+  left: 50%;
+  margin-right: -50%;
+  width: 150rem;
+  -webkit-transform: translate(-4%, 50%);
+  transform: translate(-4%, 50%);
+  background-color: #fff;
+  min-width: 69%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000356}}
+#street-content .top.right.orange {
+  background-color: #dc6900;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000360}}
+#street-content .top.asterick {
+  width: 2.5rem;
+  top: 7.5%;
+  top: 53%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-394%, -352%);
+  transform: translate(-394%, -352%);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000372}}
+  #street-content .top.left {
+    -webkit-transform: translate(-122%, 50%);
+    transform: translate(-122%, 50%);
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000375}}
+  #street-content .top.right {
+    width: 409rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000378}}
+  #street-content .top.asterick {
+    -webkit-transform: translate(-814%, -359%);
+    transform: translate(-814%, -359%);
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000384}}
+.street-text {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  top: 55%;
+  left: 50%;
+  padding: 5%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000393}}
+.street-text h1 {
+  font-size: 3.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\0000396}}
+.street-text p {
+  font-size: 1rem;
+  width: 21.6rem;
+  line-height: 1.8rem;
+  margin: auto;
+  margin-top: 3%;
+}
+@media screen and (min-width: 550px) and (max-width: 780px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\00003104}}
+  .street-text h1 {
+    font-size: 5.3rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\00003107}}
+  .street-text p {
+    font-size: 1rem;
+    width: 24rem;
+  }
+}
+@media screen and (min-width: 780px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\00003113}}
+  .street-text h1 {
+    font-size: 8rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\00003116}}
+  .street-text p {
+    font-size: 1rem;
+    width: 51rem;
+    line-height: 1.9rem;
+    margin-top: 1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel2\.scss}line{font-family:\00003124}}
+  .street-text h1 {
+    font-size: 9rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\000031}}
+#skyline {
+  background-image: url("../assets/bgphotos/building450.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\000031}}
+  #skyline {
+    background-image: url("../assets/bgphotos/building450@2x.jpg");
+  }
+}
+@media (min--moz-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\000031}}
+  #skyline {
+    background-image: url("../assets/bgphotos/building450@2x.jpg");
+  }
+}
+@media (-o-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\000031}}
+  #skyline {
+    background-image: url("../assets/bgphotos/building450@2x.jpg");
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\000031}}
+  #skyline {
+    background-image: url("../assets/bgphotos/building1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\000031}}
+  #skyline {
+    background-image: url("../assets/bgphotos/building.jpg");
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000313}}
+#skyline [class^="triangle-"] {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  z-index: 2;
+  -webkit-transition-property: scale;
+  transition-property: scale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000324}}
+#skyline .triangle-1 {
+  left: 0;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000328}}
+#skyline .triangle-2 {
+  right: 0;
+  -webkit-transform-origin: 101% 101%;
+  transform-origin: 101% 101%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000332}}
+#skyline .skyline-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000338}}
+#skyline .skyline-content {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000342}}
+#skyline .skyline-content h1 {
+  margin: 0;
+  display: block;
+  width: 87%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 15% 2%;
+}
+@media screen and (min-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000342}}
+  #skyline .skyline-content h1 {
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+    text-shadow: rgba(0, 0, 0, 0.15) 6px 4px 5px;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000342}}
+  #skyline .skyline-content h1 {
+    font-size: 3.08rem;
+    line-height: 3.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel3\.scss}line{font-family:\0000342}}
+  #skyline .skyline-content h1 {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    width: 75%;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+#brick {
+  background-image: url("../assets/bgphotos/hose450.jpg");
+  color: #000;
+  font-size: 7px;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    background-image: url("../assets/bgphotos/hose450@2x.jpg");
+  }
+}
+@media (min--moz-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    background-image: url("../assets/bgphotos/hose450@2x.jpg");
+  }
+}
+@media (-o-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    background-image: url("../assets/bgphotos/hose450@2x.jpg");
+  }
+}
+@media screen and (min-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    background-image: url("../assets/bgphotos/hose1200.jpg");
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 850px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1000px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    background-image: url("../assets/bgphotos/hose.jpg");
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\000031}}
+  #brick {
+    font-size: 20px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000332}}
+#brick .panel {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000339}}
+#brick #brick-content {
+  width: 90%;
+  height: 34em;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 16px;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000339}}
+  #brick #brick-content {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000339}}
+  #brick #brick-content {
+    width: 68em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000355}}
+#brick #brick-content img {
+  position: absolute;
+  top: 22em;
+  left: 3%;
+  width: 67%;
+  z-index: 1;
+}
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000355}}
+  #brick #brick-content img {
+    left: 8%;
+    width: 61%;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000355}}
+  #brick #brick-content img {
+    left: 9%;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000355}}
+  #brick #brick-content img {
+    left: 7%;
+    width: 63%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000374}}
+#brick #brick-content > div {
+  width: 42%;
+  position: relative;
+  top: 0;
+  height: 100%;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000374}}
+  #brick #brick-content > div {
+    width: 50%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000383}}
+#brick #brick-content > div:first-of-type h1 {
+  position: absolute;
+  right: 1em;
+  width: 12em;
+  font-size: 2.1em;
+  line-height: 1.3em;
+  text-align: left;
+  display: block;
+  margin: 0;
+  top: 45%;
+  left: 61%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000383}}
+  #brick #brick-content > div:first-of-type h1 {
+    max-width: 16em;
+    font-size: 2em;
+    left: 52%;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\0000383}}
+  #brick #brick-content > div:first-of-type h1 {
+    width: 13em;
+    top: 50%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\00003108}}
+#brick #brick-content > div:nth-of-type(2n) {
+  right: 0;
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\00003111}}
+#brick #brick-content > div:nth-of-type(2n) .circle {
+  width: 22.5em;
+  height: 22.5em;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 5%;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\00003111}}
+  #brick #brick-content > div:nth-of-type(2n) .circle {
+    width: 18.5em;
+    height: 18.5em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel4\.scss}line{font-family:\00003127}}
+#brick #brick-content > div:nth-of-type(2n) .circle h1 {
+  font-size: 7.2em;
+  padding: auto;
+  display: block;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\000031}}
+#nycave {
+  background-image: url("../assets/bgphotos/window450.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\000031}}
+  #nycave {
+    background-image: url("../assets/bgphotos/window450@2x.jpg");
+  }
+}
+@media (min--moz-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\000031}}
+  #nycave {
+    background-image: url("../assets/bgphotos/window450@2x.jpg");
+  }
+}
+@media (-o-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\000031}}
+  #nycave {
+    background-image: url("../assets/bgphotos/window450@2x.jpg");
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\000031}}
+  #nycave {
+    background-image: url("../assets/bgphotos/window1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\000031}}
+  #nycave {
+    background-image: url("../assets/bgphotos/window.jpg");
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\0000313}}
+#nycave > h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 100%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  line-height: 1.9rem;
+  height: 12rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-shadow: rgba(0, 0, 0, 0.15) 4px 4px 5px;
+}
+@media screen and (min-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\0000313}}
+  #nycave > h1 {
+    font-size: 2.6rem;
+    line-height: 2.9rem;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\0000313}}
+  #nycave > h1 {
+    font-size: 3.5rem;
+    line-height: 4.1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel5\.scss}line{font-family:\0000313}}
+  #nycave > h1 {
+    font-size: 4.2rem;
+    line-height: 4.6rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\000031}}
+#street-lower {
+  font-size: 6px;
+  text-align: center;
+  background-color: #b5c178;
+}
+@media screen and (min-width: 550px) and (max-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\000031}}
+  #street-lower {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\000031}}
+  #street-lower {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\000031}}
+  #street-lower {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\000031}}
+  #street-lower {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\000031}}
+  #street-lower {
+    font-size: 20px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000321}}
+#street-lower #map-header {
+  background-color: #fff;
+  color: #004184;
+  height: 8.2em;
+  top: 10%;
+  z-index: 9999;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000328}}
+#street-lower #map-header h1 {
+  position: absolute;
+  width: 100%;
+  font-size: 250%;
+  font-weight: 700;
+  height: 1em;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000339}}
+#street-lower #map-header h1 span {
+  font-weight: 700;
+  color: #004184;
+  display: block;
+}
+@media screen and (min-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000345}}
+  #street-lower #map-header h1 span {
+    display: initial;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000351}}
+#street-lower #map-wrapper {
+  position: absolute;
+  width: 49em;
+  height: 49em;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000360}}
+#street-lower #map-wrapper #map {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
+  opacity: 0.15;
+  width: 90%;
+  height: 100%;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000351}}
+  #street-lower #map-wrapper {
+    width: 36em;
+    height: 36em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000370}}
+#street-lower [class^="layer-"] {
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000372}}
+#street-lower [class^="layer-"] .circle-outter {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  width: 5.7em;
+  height: 5.7em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000379}}
+#street-lower [class^="layer-"] .circle-inner {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+  left: 0.6em;
+  top: 0.6em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\0000388}}
+#street-lower [class^="layer-"] h3 {
+  display: block;
+  font-size: 2.2em;
+  height: 1em;
+  color: #015fd0;
+  top: 1.2rem;
+  left: 1.2rem;
+  font-weight: 700;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003103}}
+#street-lower [class^="layer-"] .line {
+  height: 3px;
+  width: 11em;
+  background-color: #015fd0;
+  position: absolute;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003110}}
+#street-lower [class^="layer-"] p {
+  width: 31em;
+  display: block;
+  position: absolute;
+  text-align: left;
+  line-height: 1.8em;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003110}}
+  #street-lower [class^="layer-"] p {
+    width: 14em;
+    left: 4em;
+    top: 2.2em;
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003110}}
+  #street-lower [class^="layer-"] p {
+    width: 16em;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003110}}
+  #street-lower [class^="layer-"] p {
+    width: 27em;
+    font-size: 1.4em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003132}}
+#street-lower .layer-1 {
+  top: 24em;
+  left: 19.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003135}}
+#street-lower .layer-1 .line {
+  left: 5.5em;
+  top: 2.8em;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003132}}
+  #street-lower .layer-1 {
+    top: 17em;
+    left: 13.3em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003143}}
+#street-lower .layer-1 p {
+  left: 3.2em;
+  top: 2em;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003143}}
+  #street-lower .layer-1 p {
+    left: 4em;
+    top: 2.4em;
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003143}}
+  #street-lower .layer-1 p {
+    left: 4.3em;
+    top: 2.5em;
+    width: 18em;
+  }
+}
+@media screen and (min-width: 950px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003143}}
+  #street-lower .layer-1 p {
+    left: 6.3em;
+    top: 3.5em;
+  }
+}
+@media screen and (min-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003143}}
+  #street-lower .layer-1 p {
+    width: 30em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003165}}
+#street-lower .layer-2 {
+  top: 17em;
+  right: 23em;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003165}}
+  #street-lower .layer-2 {
+    top: 14em;
+    left: 27em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003172}}
+#street-lower .layer-2 .line {
+  right: -16.5em;
+  top: 2.8em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003176}}
+#street-lower .layer-2 p {
+  left: 3em;
+  top: 1.8em;
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003176}}
+  #street-lower .layer-2 p {
+    left: 4.3em;
+    top: 2.5em;
+    width: 14em;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003176}}
+  #street-lower .layer-2 p {
+    left: 6.3em;
+    top: 3.5em;
+  }
+}
+@media screen and (min-width: 1400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003176}}
+  #street-lower .layer-2 p {
+    width: 24em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003194}}
+#street-lower .layer-3 {
+  top: 34em;
+  left: 17em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003197}}
+#street-lower .layer-3 .line {
+  top: 3em;
+  left: -10.8em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003201}}
+#street-lower .layer-3 p {
+  top: 2.2em;
+  left: -13.3em;
+  width: 13em;
+  text-align: right;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003201}}
+  #street-lower .layer-3 p {
+    left: 3.5em;
+    top: 2.2em;
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003201}}
+  #street-lower .layer-3 p {
+    top: 2.7em;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003201}}
+  #street-lower .layer-3 p {
+    top: 3.7em;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 950px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003201}}
+  #street-lower .layer-3 p {
+    left: -19.3em;
+  }
+}
+@media screen and (min-width: 950px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003201}}
+  #street-lower .layer-3 p {
+    width: 19em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003225}}
+#street-lower .layer-4 {
+  top: 8em;
+  left: 22em;
+  width: 19em;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003225}}
+  #street-lower .layer-4 {
+    top: 3em;
+    left: 24em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003233}}
+#street-lower .layer-4 .line {
+  top: 3em;
+  right: 2.6em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003237}}
+#street-lower .layer-4 p {
+  top: 2.2em;
+  left: 3em;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003237}}
+  #street-lower .layer-4 p {
+    top: 2.8em;
+    left: -12em;
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003237}}
+  #street-lower .layer-4 p {
+    top: 2.8em;
+    left: 4.5em;
+    width: 12em;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003237}}
+  #street-lower .layer-4 p {
+    top: 3.8em;
+    left: 6.5em;
+    width: 17em;
+  }
+}
+@media screen and (min-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003237}}
+  #street-lower .layer-4 p {
+    width: 20em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003260}}
+#street-lower .layer-5 {
+  bottom: 16em;
+  right: 24em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003263}}
+#street-lower .layer-5 .line {
+  top: 3em;
+  left: 5.4em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003267}}
+#street-lower .layer-5 p {
+  width: 13em;
+  top: 2.3em;
+  left: 3.3em;
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003267}}
+  #street-lower .layer-5 p {
+    top: 3em;
+    left: 4.7em;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003267}}
+  #street-lower .layer-5 p {
+    top: 3.7em;
+    left: 6.4em;
+    width: 19em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003283}}
+#street-lower .layer-6 {
+  top: 4em;
+  right: 46em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003286}}
+#street-lower .layer-6 .circle-outter {
+  width: 12.5em;
+  height: 12.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003290}}
+#street-lower .layer-6 .circle-inner {
+  left: 1.25em;
+  top: 1.25em;
+  width: 10.1em;
+  height: 10.1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003296}}
+#street-lower .layer-6 h3 {
+  font-size: 4em;
+  height: 1em;
+  color: #000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003301}}
+#street-lower .layer-6 .line {
+  right: -23em;
+  top: 6em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003305}}
+#street-lower .layer-6 p {
+  width: 16em;
+  top: 4em;
+  text-align: left;
+  left: 7.1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003310}}
+#street-lower .layer-6 p em {
+  color: #004184;
+  font-weight: 700;
+}
+@media screen and (max-width: 399px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003305}}
+  #street-lower .layer-6 p {
+    width: 11em;
+    left: 6.1em;
+    top: 4em;
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003305}}
+  #street-lower .layer-6 p {
+    width: 16em;
+    top: 5em;
+    left: 9.8em;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003305}}
+  #street-lower .layer-6 p {
+    width: 16em;
+    top: 7em;
+    left: 13.8em;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel6\.scss}line{font-family:\00003305}}
+  #street-lower .layer-6 p {
+    width: 21em;
+    top: 6.5em;
+    left: 14em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\000031}}
+#bridge {
+  background-image: url("../assets/bgphotos/basketball450.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\000031}}
+  #bridge {
+    background-image: url("../assets/bgphotos/basketball450@2x.jpg");
+  }
+}
+@media (min--moz-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\000031}}
+  #bridge {
+    background-image: url("../assets/bgphotos/basketball450@2x.jpg");
+  }
+}
+@media (-o-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\000031}}
+  #bridge {
+    background-image: url("../assets/bgphotos/basketball450@2x.jpg");
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\000031}}
+  #bridge {
+    background-image: url("../assets/bgphotos/basketball1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\000031}}
+  #bridge {
+    background-image: url("../assets/bgphotos/basketball.jpg");
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\0000313}}
+#bridge #bridge-overlay {
+  background-color: #004184;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\0000319}}
+#bridge #bridge-content {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  width: 88%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\0000330}}
+#bridge #bridge-content h1 {
+  margin: 0;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\0000330}}
+  #bridge #bridge-content h1 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 680px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\0000330}}
+  #bridge #bridge-content h1 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\0000330}}
+  #bridge #bridge-content h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\0000330}}
+  #bridge #bridge-content h1 {
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel7\.scss}line{font-family:\0000330}}
+  #bridge #bridge-content h1 {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\000031}}
+#fence {
+  background-image: url("../assets/bgphotos/river450.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\000031}}
+  #fence {
+    background-image: url("../assets/bgphotos/river450@2x.jpg");
+  }
+}
+@media (min--moz-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\000031}}
+  #fence {
+    background-image: url("../assets/bgphotos/river450@2x.jpg");
+  }
+}
+@media (-o-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\000031}}
+  #fence {
+    background-image: url("../assets/bgphotos/river450@2x.jpg");
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\000031}}
+  #fence {
+    background-image: url("../assets/bgphotos/river1200@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\000031}}
+  #fence {
+    background-image: url("../assets/bgphotos/river.jpg");
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000313}}
+#fence #fence-header {
+  width: 100%;
+  height: 15rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000313}}
+  #fence #fence-header {
+    height: 12rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000313}}
+  #fence #fence-header {
+    height: 9rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000324}}
+#fence #fence-header h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding-top: 3rem;
+  width: 25rem;
+  margin: auto;
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000324}}
+  #fence #fence-header h1 {
+    width: 36rem;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000324}}
+  #fence #fence-header h1 {
+    width: 45rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000324}}
+  #fence #fence-header h1 {
+    width: 100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000340}}
+#fence #fence-header h1 em {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000346}}
+#fence #fence-content {
+  width: 100%;
+  height: -webkit-calc(100% - 12rem);
+  height: calc(100% - 12rem);
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000350}}
+#fence #fence-content .circles {
+  width: 27rem;
+  height: 16rem;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000361}}
+#fence #fence-content .circles .circle {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  margin: 0.5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000371}}
+#fence #fence-content .circles .circle:hover {
+  background-color: #004184;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000374}}
+#fence #fence-content .circles .circle#abc {
+  background-image: url("../assets/logo_abcnews.png");
+  background-position: 50% 51%;
+  background-size: 52%;
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000378}}
+#fence #fence-content .circles .circle#abc:hover {
+  background-image: url("../assets/logo_abcnews_white.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000382}}
+#fence #fence-content .circles .circle#marketwatch {
+  background-image: url("../assets/logo_marketwatch.svg");
+  background-size: 75%;
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000385}}
+#fence #fence-content .circles .circle#marketwatch:hover {
+  background-image: url("../assets/logo_marketwatch_white.svg");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000390}}
+#fence #fence-content .circles .circle#wired {
+  background-image: url("../assets/logo_wired.svg");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000392}}
+#fence #fence-content .circles .circle#wired:hover {
+  background-image: url("../assets/logo_wired_white.svg");
+}
+@media screen and (min-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000350}}
+  #fence #fence-content .circles {
+    width: 34rem;
+    height: 23rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\00003100}}
+  #fence #fence-content .circles .circle {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\0000350}}
+  #fence #fence-content .circles {
+    width: 54rem;
+    height: 23rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel8\.scss}line{font-family:\00003108}}
+  #fence #fence-content .circles .circle {
+    width: 15rem;
+    height: 15rem;
+    margin: 0.9rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+#taxi {
+  background-image: url("../assets/bgphotos/sky2450.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+  #taxi {
+    background-image: url("../assets/bgphotos/sky2450@2x.jpg");
+  }
+}
+@media (min--moz-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+  #taxi {
+    background-image: url("../assets/bgphotos/sky2450@2x.jpg");
+  }
+}
+@media (-o-min-device-pixel-ratio: 2) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+  #taxi {
+    background-image: url("../assets/bgphotos/sky2450@2x.jpg");
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+  #taxi {
+    background-image: url("../assets/bgphotos/sky21200.jpg");
+  }
+}
+@media screen and (min-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+  #taxi {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1000px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+  #taxi {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+  #taxi {
+    background-image: url("../assets/bgphotos/sky2.jpg");
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\000031}}
+  #taxi {
+    font-size: 34px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000323}}
+#taxi #taxi-header {
+  height: 5.2em;
+  top: 0%;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  margin: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000332}}
+#taxi #taxi-header h1 {
+  font-size: 220%;
+  line-height: 110%;
+  text-shadow: rgba(0, 0, 0, 0.15) 4px 4px 5px;
+  width: 84%;
+  margin: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000340}}
+#taxi #circle-wrapper {
+  width: 90%;
+  height: 34em;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000340}}
+  #taxi #circle-wrapper {
+    height: 11em;
+    width: 91%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000353}}
+#taxi #circle-wrapper #circles {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000358}}
+#taxi #circle-wrapper #circles [id^="circle-"] {
+  vertical-align: middle;
+  text-align: center;
+  display: block;
+  background-color: rgba(0, 65, 132, 0.6);
+  border-radius: 50%;
+  width: 11em;
+  height: 11em;
+  margin: 1% auto;
+  position: relative;
+}
+@media screen and (min-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000358}}
+  #taxi #circle-wrapper #circles [id^="circle-"] {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000358}}
+  #taxi #circle-wrapper #circles [id^="circle-"] {
+    margin: auto 2%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000374}}
+#taxi #circle-wrapper #circles [id^="circle-"] > div {
+  letter-spacing: .01em;
+  width: 85%;
+  max-height: 66%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000384}}
+#taxi #circle-wrapper #circles [id^="circle-"] > div h1 {
+  font-size: 4em;
+  border-bottom: #b5c178 0.05em solid;
+  margin-bottom: 0.08em;
+  padding-bottom: .08em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel9\.scss}line{font-family:\0000390}}
+#taxi #circle-wrapper #circles [id^="circle-"] > div p {
+  line-height: 1.4em;
+  font-size: .65em;
+  width: 80%;
+  margin: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\000031}}
+#outro {
+  background-color: #004184;
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\000034}}
+#outro .wrapper {
+  width: 25rem;
+  position: relative;
+  margin: auto;
+  height: 100%;
+}
+@media screen and (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\000034}}
+  #outro .wrapper {
+    width: 32rem;
+  }
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\000034}}
+  #outro .wrapper {
+    width: 50rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000315}}
+#outro .wrapper:first-of-type {
+  height: -webkit-calc(100% - 100px);
+  height: calc(100% - 100px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000318}}
+#outro .wrapper .outro-content {
+  width: 100%;
+  height: 20rem;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000327}}
+#outro .wrapper .outro-content #outro-text {
+  height: 50%;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000330}}
+#outro .wrapper .outro-content #outro-text h2 {
+  width: 104%;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  margin: 0;
+  font-weight: 700;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000330}}
+  #outro .wrapper .outro-content #outro-text h2 {
+    font-size: 4.1rem;
+    line-height: 4.2rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000342}}
+#outro .wrapper .outro-content #outro-text h1 {
+  font-size: 5.1rem;
+  padding-top: 3rem;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000342}}
+  #outro .wrapper .outro-content #outro-text h1 {
+    font-size: 7.1rem;
+    padding-top: 1rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000351}}
+#outro .wrapper .outro-content #social-media {
+  border-top: 0.3rem #fff solid;
+  height: 50%;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000355}}
+#outro .wrapper .outro-content #social-media #outro-social-media {
+  margin: 1rem auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000357}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a {
+  display: inline-block;
+  width: 3.3rem;
+  height: 3.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0.3rem;
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000357}}
+  #outro .wrapper .outro-content #social-media #outro-social-media div > a {
+    width: 4.7rem;
+    height: 4.7rem;
+    margin: 0.6rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000370}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a:hover {
+  background-color: #199cdc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000373}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a:focus {
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000376}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a .fa {
+  font-size: 2rem;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  color: #004184;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000376}}
+  #outro .wrapper .outro-content #social-media #outro-social-media div > a .fa {
+    font-size: 2.6rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000388}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a#linkedin .fa {
+  top: 15%;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000388}}
+  #outro .wrapper .outro-content #social-media #outro-social-media div > a#linkedin .fa {
+    top: 20%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000394}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a#facebook .fa {
+  top: 15%;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\0000394}}
+  #outro .wrapper .outro-content #social-media #outro-social-media div > a#facebook .fa {
+    top: 23%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003100}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a#twitter .fa {
+  top: 19%;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003100}}
+  #outro .wrapper .outro-content #social-media #outro-social-media div > a#twitter .fa {
+    top: 23%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003106}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a#googleplus .fa {
+  top: 25%;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003106}}
+  #outro .wrapper .outro-content #social-media #outro-social-media div > a#googleplus .fa {
+    top: 28%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003112}}
+#outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
+  font-size: 1.8rem;
+  top: 17%;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003112}}
+  #outro .wrapper .outro-content #social-media #outro-social-media div > a#email .fa {
+    font-size: 2.3rem;
+    top: 23%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003123}}
+#outro .wrapper .outro-content h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003123}}
+  #outro .wrapper .outro-content h3 {
+    font-size: 1rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003134}}
+#outro #closing {
+  padding-top: 0.5rem;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003141}}
+#outro #closing p {
+  text-align: center;
+  font-size: 1rem;
+  display: block;
+  margin: 0;
+  line-height: 1.5rem;
+  color: #897d5e;
+  font-weight: 600;
+  padding: 0.4rem;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003141}}
+  #outro #closing p {
+    position: absolute;
+    text-align: left;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003154}}
+#outro #closing p > a {
+  color: #195490;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003157}}
+#outro #closing p > a:hover {
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003163}}
+#outro #closing #logos #thinkeco-logo {
+  margin-left: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003166}}
+#outro #closing #logos #cpslogo {
+  width: 7.5rem;
+  padding-top: 6px;
+}
+@media screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/_partials\/_panel10\.scss}line{font-family:\00003162}}
+  #outro #closing #logos {
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000310}}
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000318}}
+html {
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000323}}
+html h1 {
+  font-weight: 700;
+}
+@media screen and (min-width: 400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000318}}
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000318}}
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000318}}
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000318}}
+  html {
+    font-size: 20px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000340}}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000343}}
+html section, body section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000358}}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000363}}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000372}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000386}}
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\0000398}}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003108}}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003116}}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003129}}
+.verticalboxes, #street-upper .bottom, #street-content .bottom {
+  position: absolute;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003134}}
+.backgroundimage, #intro #intro-sky-bg, #street-upper, #skyline, #brick, #nycave, #bridge, #fence, #taxi {
+  background-size: cover;
+  -ms-behavior: url("../js/polyfills/backgroundsize.min.htc");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003140}}
+#page {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003144}}
+#loading {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #004184;
+  background-color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  text-align: center;
+  padding-top: 12rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003156}}
+#loading .loading-icon {
+  font-size: 4rem;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003160}}
+#loading .loading-title {
+  font-size: 4rem;
+  line-height: 1em;
+  margin: .25em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003165}}
+#loading a {
+  color: #004184;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003171}}
+.no-cssanimations #loading .loading-icon {
+  display: none;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003188}}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003197}}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003213}}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003227}}
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003243}}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/main\.scss}line{font-family:\00003249}}
+.clearfix:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\000035}}
+#intro #intro-content .box {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\000038}}
+#intro #intro-content .asterick {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000312}}
+#intro #intro-content #intro-content-top #intro-title {
+  padding: 2%;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 4.5rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000325}}
+#intro #intro-content #intro-content-bottom #intro-section {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 10rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000334}}
+#intro #intro-content #intro-content-bottom #intro-section #intro-year {
+  display: inline-block;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000338}}
+#intro #intro-content #intro-content-bottom #intro-section #intro-text {
+  display: inline-block;
+  float: right;
+  width: 35rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000346}}
+#intro footer {
+  height: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000353}}
+#street-upper #street-content .top {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000356}}
+#street-upper #street-content .asterick {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000359}}
+#street-upper #street-content .street-text {
+  height: 10.5rem;
+  width: 90%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000372}}
+#skyline .triangle-1, #skyline .triangle-2 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000375}}
+#skyline .skyline-container {
+  background-color: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000379}}
+#skyline .skyline-container .skyline-content h1 {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 3rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\0000395}}
+#brick #brick-content h1#brick-text {
+  position: absolute;
+  width: 12em;
+  text-align: left;
+  display: block;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  height: 7em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\00003106}}
+#brick #brick-content img {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\00003109}}
+#brick #brick-content .right-panel {
+  right: 0;
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\00003112}}
+#brick #brick-content .right-panel .circle {
+  width: 22.5em;
+  height: 22.5em;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 5%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\00003122}}
+#brick #brick-content .right-panel .circle h1 {
+  padding: auto;
+  display: block;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\00003139}}
+#bridge #bridge-overlay {
+  background-color: #004184;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shelly\/Documents\/Working\/cps14\/app\/_scss\/ie9\.scss}line{font-family:\00003144}}
+#bridge #bridge-content h1 {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 2rem;
+}
