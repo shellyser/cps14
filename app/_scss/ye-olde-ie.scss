@@ -5,6 +5,15 @@ $modern: false;
 
 @import "main";
 
+@font-face {
+  font-family: 'Roboto Slab', serif;
+  src: url('../fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype');
+} 
+
+html{
+  font-family: 'Roboto Slab', serif;
+}
+
 #intro{
   #intro-content-bg {
       background-color: $white;
@@ -101,14 +110,14 @@ $modern: false;
 }
 #brick{
   .panel{
-
     background-color: $white;
     @include opacity(.6);
   }
   #brick-content{
     h1#brick-text{
       position: absolute;
-      width: 12em;
+      width: 13em;
+      font-size: 2em;
       text-align: left;
       display: block;
       margin: auto;
@@ -117,6 +126,9 @@ $modern: false;
       bottom: 0;
       right: 0;
       height: 5em;
+    }
+    img{
+        display: none;
     }
     .right-panel{
       right: 0;
